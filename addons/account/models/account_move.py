@@ -504,10 +504,11 @@ class AccountMove(models.Model):
 
     # === Fiduciary mode fields === #
     quick_edit_mode = fields.Boolean(compute='_compute_quick_edit_mode')
+    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
     quick_edit_total_amount = fields.Monetary(
         string='Total (Tax inc.)',
         help='Use this field to encode the total amount of the invoice.\n'
-             'Odoo will automatically create one invoice line with default values to match it.',
+             'Calypso will automatically create one invoice line with default values to match it.',
     )
     quick_encoding_vals = fields.Binary(compute='_compute_quick_encoding_vals', exportable=False)
 

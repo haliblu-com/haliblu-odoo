@@ -395,8 +395,9 @@
                                                     <t t-out="preference" />
                                                 </div>
                                                 <div class="by_odoo" style="margin-bottom: 15px;">
-                                                    Sent by <a href="https://www.odoo.com" target="_blank">
-                                                    <span class="odoo_link_text">Odoo</span></a>
+                                                    <!-- Debranding odoo: Replaced 'Sent by <a href="https://www.odoo.com" target="_blank">
+                                                    <span class="odoo_link_text">Odoo</span></a>' with 'Sent by Calypso' -->
+                                                    Sent by Calypso
                                                     <t t-if="unsubscribe_token">
                                                         –
                                                         <a t-attf-href="/digest/#{object.id}/unsubscribe?token=#{unsubscribe_token}&amp;user_id=#{user.id}" target="_blank"
@@ -418,7 +419,8 @@
                                 </table>
                             </td>
                         </tr>
-                        <tr t-if="display_mobile_banner" t-call="digest.digest_section_mobile" />
+                        <!-- Debranding odoo -->
+                        <!-- <tr t-if="display_mobile_banner" t-call="digest.digest_section_mobile" /> -->
                     </tfoot>
                 </table>
             </td>
@@ -432,10 +434,11 @@
                         <tr>
                             <div id="footer">
                                 <p style="font-weight: bold;" t-esc="company.name" />
-                                <p class="by_odoo" id="powered">
+                                <!-- Debranding Odoo -->
+                                <!-- <p class="by_odoo" id="powered">
                                     Powered by <a href="https://www.odoo.com" target="_blank" class="odoo_link">
                                         <span class="odoo_link_text">Odoo</span></a>
-                                </p>
+                                </p> -->
                             </div>
                         </tr>
                     </tbody>
@@ -453,9 +456,10 @@
 <td colspan="3" style="padding: 20px;width:100%; border-bottom: 1px solid #d8dadd;">
     <table>
         <tbody>
-            <tr>
-                <td align="right" style="width: 33%;">
-                    <img src="https://www.odoo.com/web/image/38874595-16ef5349/odoo-mobile.png" alt="Odoo Mobile" />
+            <!-- Debranding Odoo -->
+            <!-- <tr>
+                <td align="right" style="width: 50%;">
+                    <img src="https://www.odoo.com/web/image/24717933/odoo-mobile.png" alt="Odoo Mobile" />
                 </td>
                 <td align="left" style="width: 66%;">
                     <table>
@@ -485,7 +489,7 @@
                         </tbody>
                     </table>
                 </td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
 </td>

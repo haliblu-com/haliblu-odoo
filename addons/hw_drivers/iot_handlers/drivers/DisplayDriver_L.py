@@ -251,9 +251,10 @@ class DisplayController(http.Controller):
         default_display = DisplayDriver.get_default_display()
         if not display_identifier and default_display != 0:
             display_identifier = default_display.device_identifier
-
+    
+        # Debranding odoo: Replaced 'Odoo' with 'Calypso'
         return pos_display_template.render({
-            'title': "Odoo -- Point of Sale",
+            'title': "Calypso -- Point of Sale",
             'breadcrumb': 'POS Client display',
             'cust_js': cust_js,
             'display_ifaces': display_ifaces,

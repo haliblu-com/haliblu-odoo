@@ -24,7 +24,8 @@
                                     <span class='o_form_label' invisible="active_user_count &lt;= 1">
                                         Active Users
                                     </span>
-                                    <a href="https://www.odoo.com/documentation/17.0/applications/general/users.html" title="Documentation" class="o_doc_link" target="_blank"></a>
+                                    <!-- Debranding Odoo -->
+                                    <!-- <a href="https://www.odoo.com/documentation/17.0/applications/general/users.html" title="Documentation" class="o_doc_link" target="_blank"></a> -->
                                     <br/>
                                     <button name="%(base.action_res_users)d" icon="oi-arrow-right" type="action" string="Manage Users" class="btn-link o_web_settings_access_rights"/>
                                 </setting>
@@ -104,7 +105,8 @@
                         <div id="contacts_settings">
                             <block title="Contacts" name="contacts_setting_container">
                                 <setting id="sms" string="Send SMS" documentation="/applications/marketing/sms_marketing/pricing/pricing_and_faq.html" help="Send texts to your contacts" />
-                                <setting help="Automatically enrich your contact base with company data" title="When populating your address book, Odoo provides a list of matching companies. When selecting one item, the company data and logo are auto-filled." id="partner_autocomplete">
+                                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                                <setting help="Automatically enrich your contact base with company data" title="When populating your address book, Calypso provides a list of matching companies. When selecting one item, the company data and logo are auto-filled." id="partner_autocomplete">
                                     <field name="module_partner_autocomplete"/>
                                 </setting>
                         </block>
@@ -119,7 +121,8 @@
                                 </div>
                             </div>
                         </setting>
-                        <setting string="API Keys" help="API Keys allow your users to access Odoo with external tools when multi-factor authentication is enabled." groups="base.group_system">
+                        <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                        <setting string="API Keys" help="API Keys allow your users to access Calypso with external tools when multi-factor authentication is enabled." groups="base.group_system">
                             <button type="action" name="%(base.action_apikeys_admin)d" string="Manage API Keys" icon="oi-arrow-right" class="btn-link"/>
                         </setting>
                         <setting string="Import &amp; Export" help="Allow users to import data from CSV/XLS/XLSX/ODS files" documentation="/applications/general/export_import_data.html" groups="base.group_no_one" id="allow_import">
@@ -131,8 +134,9 @@
                     </block>
 
                     <block title="Progressive Web App" id="pwa_settings" groups="base.group_no_one">
-                        <setting help="This name will be used for the application when Odoo is installed through the browser.">
-                            <field name="web_app_name" placeholder="Odoo"/>
+                        <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                        <setting help="This name will be used for the application when Calypso is installed through the browser.">
+                            <field name="web_app_name" placeholder="Calypso"/>
                         </setting>
                     </block>
 
@@ -187,14 +191,15 @@
                         </block>
 
                         <widget name='res_config_dev_tool'/>
-                        <div id='about'>
-                            <block title="About" name="about_setting_container">
-                                <setting id='appstore'>
+                            <!-- Debranding Odoo -->
+                        <!-- <div id='about'> -->
+                            <!-- <block title="About" name="about_setting_container"> -->
+                                <!-- <setting id='appstore'>
                                     <div class="d-flex">
-                                        <div>
+                                        <div> -->
                                             <!-- FIXME Those links are defined directly in the template which means that we will have to
                                             update the template code is the link ever changes -->
-                                            <a class="d-block mx-auto" href="https://play.google.com/store/apps/details?id=com.odoo.mobile" target="blank">
+                                            <!-- <a class="d-block mx-auto" href="https://play.google.com/store/apps/details?id=com.odoo.mobile" target="blank">
                                                 <img alt="On Google Play" class="d-block mx-auto img img-fluid" src="/base_setup/static/src/img/google_play.png"/>
                                             </a>
                                         </div>
@@ -204,10 +209,10 @@
                                             </a>
                                         </div>
                                     </div>
-                                </setting>
-                                <widget name='res_config_edition'/>
-                            </block>
-                        </div>
+                                </setting> -->
+                                <!-- <widget name='res_config_edition'/> -->
+                            <!-- </block> -->
+                        <!-- </div> -->
                     </app>
                 </xpath>
             </field>

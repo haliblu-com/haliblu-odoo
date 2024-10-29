@@ -29,7 +29,8 @@
                         <tr><td valign="top" style="font-size: 13px;">
                             <div>
                                 Dear <t t-out="object.name or ''">Marc Demo</t>,<br/><br/>
-                                A password reset was requested for the Odoo account linked to this email.
+                                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                                A password reset was requested for the Calypso account linked to this email.
                                 You may change your password by following this link which will remain valid during 24 hours:<br/>
                                 <div style="margin: 16px 0px 16px 0px;">
                                     <a t-att-href="object.signup_url"
@@ -74,14 +75,15 @@
         </tbody>
         </table>
         </td></tr>
+        <!-- Debranding Odoo -->
         <!-- POWERED BY -->
-        <tr><td align="center" style="min-width: 590px;">
+        <!-- <tr><td align="center" style="min-width: 590px;">
             <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;">
               <tr><td style="text-align: center; font-size: 13px;">
                 Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" style="color: #875A7B;">Odoo</a>
               </td></tr>
             </table>
-        </td></tr>
+        </td></tr> -->
         </table>
     </template>
 
@@ -136,14 +138,15 @@
         </tbody>
         </table>
         </td></tr>
+        <!-- Debranding Odoo -->
         <!-- POWERED BY -->
-        <tr><td align="center" style="min-width: 590px;">
+        <!-- <tr><td align="center" style="min-width: 590px;">
             <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;">
               <tr><td style="text-align: center; font-size: 13px;">
                 Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" style="color: #875A7B;">Odoo</a>
               </td></tr>
             </table>
-        </td></tr>
+        </td></tr> -->
         </table>
     </template>
 

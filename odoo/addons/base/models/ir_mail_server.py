@@ -126,10 +126,11 @@ class IrMailServer(models.Model):
     NO_VALID_FROM = "Malformed 'Return-Path' or 'From' address. It should contain one valid plain ASCII email"
 
     name = fields.Char(string='Name', required=True, index=True)
+    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
     from_filter = fields.Char(
         "FROM Filtering",
         help='Comma-separated list of addresses or domains for which this server can be used.\n'
-             'e.g.: "notification@odoo.com" or "odoo.com"')
+             'e.g.: "notification@calypso.com" or "calypso.com"')
     smtp_host = fields.Char(string='SMTP Server', help="Hostname or IP of SMTP server")
     smtp_port = fields.Integer(string='SMTP Port', default=25, help="SMTP Port. Usually 465 for SSL, and 25 or 587 for other cases.")
     smtp_authentication = fields.Selection([

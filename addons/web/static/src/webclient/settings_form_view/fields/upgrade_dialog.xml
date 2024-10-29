@@ -4,7 +4,8 @@
         <Dialog size="'md'" title="'Odoo Enterprise'">
             <div class="row" role="status">
                 <div class="col-6">
-                    Get this feature and much more with Odoo Enterprise!
+                    <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                    Get this feature and much more with Calypso Enterprise!
                     <ul class="list-unstyled">
                         <li><i class="fa fa-check"></i> Access to all Enterprise Apps</li>
                         <li><i class="fa fa-check"></i> New design</li>

@@ -7,7 +7,8 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <h2>With Odoo, you won't have to record bills manually</h2>
+                        <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
+                        <h2>With Calypso, you won't have to record bills manually</h2>
                         <p>We process bills automatically so that you only have to validate them. Choose how you want to test our artificial intelligence engine:</p>
                         <div class="grid">
                             <field name="selection" widget="radio" class="g-col-4"/>

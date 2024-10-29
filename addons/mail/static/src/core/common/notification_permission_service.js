@@ -48,13 +48,15 @@ export const notificationPermissionService = {
                     state.permission = this._normalizePermission(
                         await browser.Notification.requestPermission()
                     );
+                    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
                     if (state.permission === "denied") {
-                        notification.add(_t("Odoo will not send notifications on this device."), {
+                        notification.add(_t("Calypso will not send notifications on this device."), {
                             type: "warning",
                             title: _t("Notifications blocked"),
                         });
                     } else if (state.permission === "granted") {
-                        notification.add(_t("Odoo will send notifications on this device!"), {
+                        // Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                        notification.add(_t("Calypso will send notifications on this device!"), {
                             type: "success",
                             title: _t("Notifications allowed"),
                         });

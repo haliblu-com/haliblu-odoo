@@ -8,6 +8,7 @@ from odoo import models, fields, _
 class Users(models.Model):
     _inherit = 'res.users'
 
+    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
     odoobot_state = fields.Selection(
         [
             ('not_initialized', 'Not initialized'),
@@ -17,7 +18,7 @@ class Users(models.Model):
             ('onboarding_ping', 'Onboarding ping'),
             ('idle', 'Idle'),
             ('disabled', 'Disabled'),
-        ], string="OdooBot Status", readonly=True, required=False)  # keep track of the state: correspond to the code of the last message sent
+        ], string="CalypsoBot Status", readonly=True, required=False)  # keep track of the state: correspond to the code of the last message sent
     odoobot_failed = fields.Boolean(readonly=True)
 
     @property
@@ -37,9 +38,10 @@ class Users(models.Model):
         self.ensure_one()
         odoobot_id = self.env['ir.model.data']._xmlid_to_res_id("base.partner_root")
         channel = self.env['discuss.channel'].channel_get([odoobot_id, self.partner_id.id])
+        # Debranding odoo: Replaced 'Odoo' with 'Calypso'
         message = Markup("%s<br/>%s<br/><b>%s</b> <span class=\"o_odoobot_command\">:)</span>") % (
             _("Hello,"),
-            _("Odoo's chat helps employees collaborate efficiently. I'm here to help you discover its features."),
+            _("Calypso's chat helps employees collaborate efficiently. I'm here to help you discover its features."),
             _("Try to send me an emoji")
         )
         channel.sudo().message_post(body=message, author_id=odoobot_id, message_type="comment", subtype_xmlid="mail.mt_comment")

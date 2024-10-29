@@ -50,9 +50,10 @@ export class BarcodeDialog extends Component {
             try {
                 this.stream = await browser.navigator.mediaDevices.getUserMedia(constraints);
             } catch (err) {
+                // Debranding odoo: Replaced 'Odoo' with 'Calypso'
                 const errors = {
                     NotFoundError: _t("No device can be found."),
-                    NotAllowedError: _t("Odoo needs your authorization first."),
+                    NotAllowedError: _t("Calypso needs your authorization first."),
                 };
                 const errorMessage =
                     _t("Could not start scanning. ") + (errors[err.name] || err.message);

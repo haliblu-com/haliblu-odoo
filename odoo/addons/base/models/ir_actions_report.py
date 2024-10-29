@@ -688,7 +688,8 @@ class IrActionsReport(models.Model):
                 if custom_error_handler:
                     custom_error_handler(stream)
                     continue
-                raise UserError(_("Odoo is unable to merge the generated PDFs."))
+                # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                raise UserError(_("Calypso is unable to merge the generated PDFs."))
         result_stream = io.BytesIO()
         streams.append(result_stream)
         writer.write(result_stream)
