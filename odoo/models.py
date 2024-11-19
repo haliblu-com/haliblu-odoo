@@ -40,6 +40,7 @@ import warnings
 import json
 from collections import defaultdict, OrderedDict, deque
 from bs4 import BeautifulSoup
+from markupsafe import Markup
 from collections.abc import MutableMapping
 from contextlib import closing
 from inspect import getmembers, currentframe
@@ -191,28 +192,53 @@ def check_company_domain_parent_of(self, companies):
         for parent in rec.parent_path.split('/')[:-1]
     ])]
 
-def unminify_string(content):
-    if not content:
-        return content
+def unminify_string(html, indent=0):
+    soup = BeautifulSoup(html, 'html.parser')
+    formatted_html = ""
 
-    # Try to handle JSON
-    try:
-        parsed_json = json.loads(content)
-        return json.dumps(parsed_json, indent=4)
-    except json.JSONDecodeError:
-        pass
+    # Process each child of the root separately
+    for child in soup.contents:
+        formatted_html += format_tag(child, indent).strip() + "\n"
 
-    # Try to handle HTML
-    try:
-        soup = BeautifulSoup(content, 'html.parser')
-        pretty_html = soup.prettify(formatter="html")
-        if pretty_html.strip():  # Check if the prettified HTML has content
-            return pretty_html
-    except Exception:
-        pass
+    return Markup(formatted_html.strip())
 
-    # If neither JSON nor HTML, return the original string
-    return content
+def format_tag(tag, indent_level):
+    formatted_html = ""
+    indent = " " * (indent_level * 4)  # 4 spaces per indentation level
+
+    if tag.name:
+        children = [child for child in tag.contents if child.name]
+        text_children = [child for child in tag.contents if not child.name and child.strip()]
+
+        # Opening tag
+        formatted_html += f"{indent}<{tag.name}"
+        for attr, value in tag.attrs.items():
+            if isinstance(value, list):  # Ensure class attributes are rendered correctly
+                value = " ".join(value)
+            formatted_html += f' {attr}="{value}"'
+        formatted_html += ">"
+
+        if len(children) == 1 and not text_children:
+            # One child tag, no new lines or indentation
+            formatted_html += format_tag(children[0], 0)
+        else:
+            # Multiple children or text content, add new lines and indentations
+            if text_children:
+                # Text content inside the tag
+                formatted_html += tag.get_text(strip=True)
+            if children:
+                formatted_html += "\n"
+                for child in children:
+                    formatted_html += format_tag(child, indent_level + 1) + "\n"
+                formatted_html += indent
+
+        # Closing tag
+        formatted_html += f"</{tag.name}>"
+    elif tag.string:
+        # Handle strings/text content
+        formatted_html += indent + tag.string.strip()
+
+    return formatted_html
 
 class MetaModel(api.Meta):
     """ The metaclass of all model classes.

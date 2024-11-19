@@ -45,7 +45,7 @@ export class TranslationDialog extends Component {
                 }
                 return termInfo;
             });
-            this.terms.sort((a, b) => a.langName.localeCompare(b.langName));
+            this.terms.sort((a, b) => a.langName.localeCompare(b.langName));            
         });
     }
 
