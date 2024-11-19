@@ -37,7 +37,9 @@ import pytz
 import re
 import uuid
 import warnings
+import json
 from collections import defaultdict, OrderedDict, deque
+from bs4 import BeautifulSoup
 from collections.abc import MutableMapping
 from contextlib import closing
 from inspect import getmembers, currentframe
@@ -189,6 +191,28 @@ def check_company_domain_parent_of(self, companies):
         for parent in rec.parent_path.split('/')[:-1]
     ])]
 
+def unminify_string(content):
+    if not content:
+        return content
+
+    # Try to handle JSON
+    try:
+        parsed_json = json.loads(content)
+        return json.dumps(parsed_json, indent=4)
+    except json.JSONDecodeError:
+        pass
+
+    # Try to handle HTML
+    try:
+        soup = BeautifulSoup(content, 'html.parser')
+        pretty_html = soup.prettify(formatter="html")
+        if pretty_html.strip():  # Check if the prettified HTML has content
+            return pretty_html
+    except Exception:
+        pass
+
+    # If neither JSON nor HTML, return the original string
+    return content
 
 class MetaModel(api.Meta):
     """ The metaclass of all model classes.
@@ -3612,8 +3636,8 @@ class BaseModel(metaclass=MetaModel):
         if field.related and not field.store:
             related_path, field_name = field.related.rsplit(".", 1)
             return self.mapped(related_path)._update_field_translations(field_name, translations, digest)
-
-        if field.translate is True:
+        
+        if field.translate is True or callable(field.translate):
             # falsy values (except emtpy str) are used to void the corresponding translation
             if any(translation and not isinstance(translation, str) for translation in translations.values()):
                 raise UserError(_("Translations for model translated fields only accept falsy values and str"))
@@ -3645,38 +3669,6 @@ class BaseModel(metaclass=MetaModel):
                 id=self.id,
             ))
             self.modified([field_name])
-        else:
-            # Note:
-            # update terms in 'en_US' will not change its value other translated values
-            # record_en = Model_en.create({'html': '<div>English 1</div><div>English 2<div/>'
-            # record_en.update_field_translations('html', {'fr_FR': {'English 2': 'French 2'}}
-            # record_en.update_field_translations('html', {'en_US': {'English 1': 'English 3'}}
-            # assert record_en                            == '<div>English 3</div><div>English 2<div/>'
-            # assert record_fr.with_context(lang='fr_FR') == '<div>English 1</div><div>French 2<div/>'
-            # assert record_nl.with_context(lang='nl_NL') == '<div>English 3</div><div>English 2<div/>'
-
-            stored_translations = field._get_stored_translations(self)
-            if not stored_translations:
-                return False
-            old_translations = {
-                k: stored_translations.get(f'_{k}', v)
-                for k, v in stored_translations.items()
-                if not k.startswith('_')
-            }
-            for lang, translation in translations.items():
-                old_value = old_translations.get(lang) or old_translations.get('en_US')
-                if digest:
-                    old_terms = field.get_trans_terms(old_value)
-                    old_terms_digested2value = {digest(old_term): old_term for old_term in old_terms}
-                    translation = {
-                        old_terms_digested2value[key]: value
-                        for key, value in translation.items()
-                        if key in old_terms_digested2value
-                    }
-                stored_translations[lang] = field.translate(translation.get, old_value)
-                stored_translations.pop(f'_{lang}', None)
-            self.env.cache.update_raw(self, field, [stored_translations], dirty=True)
-
         # the following write is incharge of
         # 1. mark field as modified
         # 2. execute logics in the override `write` method
@@ -3702,22 +3694,12 @@ class BaseModel(metaclass=MetaModel):
         val_en = self_lang.with_context(lang='en_US')[field_name]
         if not field.translate:
             translations = []
-        elif field.translate is True:
+        elif field.translate is True or callable(field.translate):
             translations = [{
                 'lang': lang,
                 'source': val_en,
-                'value': self_lang.with_context(lang=lang)[field_name]
+                'value': unminify_string(self_lang.with_context(lang=lang)[field_name]) if callable(field.translate) else self_lang.with_context(lang=lang)[field_name]
             } for lang in langs]
-        else:
-            translation_dictionary = field.get_translation_dictionary(
-                val_en, {lang: self_lang.with_context(lang=lang)[field_name] for lang in langs}
-            )
-            translations = [{
-                'lang': lang,
-                'source': term_en,
-                'value': term_lang if term_lang != term_en else ''
-            } for term_en, translations in translation_dictionary.items()
-                for lang, term_lang in translations.items()]
         context = {}
         context['translation_type'] = 'text' if field.type in ['text', 'html'] else 'char'
         context['translation_show_source'] = callable(field.translate)
