@@ -3727,7 +3727,7 @@ class BaseModel(metaclass=MetaModel):
                 'value': unminify_string(self_lang.with_context(lang=lang)[field_name]) if callable(field.translate) else self_lang.with_context(lang=lang)[field_name]
             } for lang in langs]
         context = {}
-        context['translation_type'] = 'text' if field.type in ['text', 'html'] else 'char'
+        context['translation_type'] = field.type if field.type in ['text', 'html'] else 'char'
         context['translation_show_source'] = callable(field.translate)
 
         return translations, context
