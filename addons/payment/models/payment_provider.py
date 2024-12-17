@@ -175,8 +175,8 @@ class PaymentProvider(models.Model):
     module_id = fields.Many2one(string="Corresponding Module", comodel_name='ir.module.module')
     module_state = fields.Selection(
         string="Installation State", related='module_id.state', store=True)  # Stored for sorting.
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
-    module_to_buy = fields.Boolean(string="Calypso Enterprise Module", related='module_id.to_buy')
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+    module_to_buy = fields.Boolean(string="HaliBlu Enterprise Module", related='module_id.to_buy')
 
     # View configuration fields
     show_credentials_page = fields.Boolean(compute='_compute_view_configuration_fields')

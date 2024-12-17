@@ -51,23 +51,23 @@ export class ErrorDialog extends Component {
 }
 ErrorDialog.template = "web.ErrorDialog";
 ErrorDialog.components = { Dialog };
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
-ErrorDialog.title = _t("Calypso Error");
+// Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+ErrorDialog.title = _t("HaliBlu Error");
 ErrorDialog.props = { ...standardErrorDialogProps };
 
 // -----------------------------------------------------------------------------
 // Client Error Dialog
 // -----------------------------------------------------------------------------
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
+// Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
 export class ClientErrorDialog extends ErrorDialog {}
-ClientErrorDialog.title = _t("Calypso Client Error");
+ClientErrorDialog.title = _t("HaliBlu Client Error");
 
 // -----------------------------------------------------------------------------
 // Network Error Dialog
 // -----------------------------------------------------------------------------
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
+// Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
 export class NetworkErrorDialog extends ErrorDialog {}
-NetworkErrorDialog.title = _t("Calypso Network Error");
+NetworkErrorDialog.title = _t("HaliBlu Network Error");
 
 // -----------------------------------------------------------------------------
 // RPC Error Dialog
@@ -92,16 +92,16 @@ export class RPCErrorDialog extends ErrorDialog {
             return;
         }
         
-        // Debranding odoo: Replaced 'Odoo' with 'Calypso'
+        // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
         switch (this.props.type) {
             case "server":
-                this.title = _t("Calypso Server Error");
+                this.title = _t("HaliBlu Server Error");
                 break;
             case "script":
-                this.title = _t("Calypso Client Error");
+                this.title = _t("HaliBlu Client Error");
                 break;
             case "network":
-                this.title = _t("Calypso Network Error");
+                this.title = _t("HaliBlu Network Error");
                 break;
         }
     }
@@ -131,8 +131,8 @@ export class WarningDialog extends Component {
             return odooExceptionTitleMap.get(this.props.exceptionName).toString();
         }
 
-        // Debranding odoo: Replaced 'Odoo' with 'Calypso'
-        return this.props.title || _t("Calypso Warning");
+        // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+        return this.props.title || _t("HaliBlu Warning");
     }
 }
 WarningDialog.template = "web.WarningDialog";
@@ -150,8 +150,8 @@ export class RedirectWarningDialog extends Component {
         this.actionService = useService("action");
         const { data, subType } = this.props;
         const [message, actionId, buttonText, additionalContext] = data.arguments;
-        // Debranding odoo: Replaced 'Odoo' with 'Calypso'
-        this.title = capitalize(subType) || _t("Calypso Warning");
+        // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+        this.title = capitalize(subType) || _t("HaliBlu Warning");
         this.message = message;
         this.actionId = actionId;
         this.buttonText = buttonText;
@@ -192,8 +192,8 @@ export class SessionExpiredDialog extends Component {
 }
 SessionExpiredDialog.template = "web.SessionExpiredDialog";
 SessionExpiredDialog.components = { Dialog };
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
-SessionExpiredDialog.title = _t("Calypso Session Expired");
+// Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+SessionExpiredDialog.title = _t("HaliBlu Session Expired");
 SessionExpiredDialog.props = { ...standardErrorDialogProps };
 
 registry

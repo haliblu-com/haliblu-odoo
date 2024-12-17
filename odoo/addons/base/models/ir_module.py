@@ -175,10 +175,10 @@ class Module(models.Model):
                 with tools.file_open(path, 'rb') as desc_file:
                     doc = desc_file.read()
                     if doc.startswith(XML_DECLARATION):
-                        # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                        # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
                         warnings.warn(
                             f"XML declarations in HTML module descriptions are "
-                            f"deprecated since calypso 17, {module.name} can just "
+                            f"deprecated since HaliBlu 17, {module.name} can just "
                             f"have a UTF8 description with not need for a "
                             f"declaration.",
                             category=DeprecationWarning,
@@ -187,10 +187,10 @@ class Module(models.Model):
                         try:
                             doc = doc.decode()
                         except UnicodeDecodeError:
-                            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
                             warnings.warn(
                                 f"Non-UTF8 module descriptions are deprecated "
-                                f"since calypso 17 ({module.name}'s description "
+                                f"since HaliBlu 17 ({module.name}'s description "
                                 f"is not utf-8)",
                                 category=DeprecationWarning,
                             )
@@ -299,7 +299,7 @@ class Module(models.Model):
                                         'If the module has no dependency, it is always installed.')
     state = fields.Selection(STATES, string='Status', default='uninstallable', readonly=True, index=True)
     demo = fields.Boolean('Demo Data', default=False, readonly=True)
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     license = fields.Selection([
         ('GPL-2', 'GPL Version 2'),
         ('GPL-2 or any later version', 'GPL-2 or later version'),
@@ -308,8 +308,8 @@ class Module(models.Model):
         ('AGPL-3', 'Affero GPL-3'),
         ('LGPL-3', 'LGPL Version 3'),
         ('Other OSI approved licence', 'Other OSI Approved License'),
-        ('OEEL-1', 'Calypso Enterprise Edition License v1.0'),
-        ('OPL-1', 'Calypso Proprietary License v1.0'),
+        ('OEEL-1', 'HaliBlu Enterprise Edition License v1.0'),
+        ('OPL-1', 'HaliBlu Proprietary License v1.0'),
         ('Other proprietary', 'Other Proprietary')
     ], string='License', default='LGPL-3', readonly=True)
     menus_by_module = fields.Text(string='Menus', compute='_get_views', store=True)
@@ -319,8 +319,8 @@ class Module(models.Model):
     icon = fields.Char('Icon URL')
     icon_image = fields.Binary(string='Icon', compute='_get_icon_image')
     icon_flag = fields.Char(string='Flag', compute='_get_icon_image')
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
-    to_buy = fields.Boolean('Calypso Enterprise Module', default=False)
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+    to_buy = fields.Boolean('HaliBlu Enterprise Module', default=False)
     has_iap = fields.Boolean(compute='_compute_has_iap')
 
     _sql_constraints = [
@@ -585,8 +585,8 @@ class Module(models.Model):
             # during execution, the lock won't be released until timeout.
             self._cr.execute("SELECT * FROM ir_cron FOR UPDATE NOWAIT")
         except psycopg2.OperationalError:
-            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
-            raise UserError(_("Calypso is currently processing a scheduled action.\n"
+            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+            raise UserError(_("HaliBlu is currently processing a scheduled action.\n"
                               "Module operations are not possible at this time, "
                               "please try again later or contact your system administrator."))
         function(self)

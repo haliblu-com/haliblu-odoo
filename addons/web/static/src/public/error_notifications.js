@@ -13,10 +13,10 @@ odooExceptionTitleMap.forEach((title, exceptionName) => {
     });
 });
 
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
+// Debranding odoo: Replaced 'Odoo' with 'CaHaliBlulypso'
 const sessionExpired = {
-    title: _t("Calypso Session Expired"),
-    message: _t("Your Calypso session expired. The current page is about to be refreshed."),
+    title: _t("HaliBlu Session Expired"),
+    message: _t("Your HaliBlu session expired. The current page is about to be refreshed."),
     buttons: [
         {
             text: _t("Ok"),

@@ -117,8 +117,8 @@ class AccountJournal(models.Model):
     sequence = fields.Integer(help='Used to order Journals in the dashboard view', default=10)
 
     invoice_reference_type = fields.Selection(string='Communication Type', required=True, selection=[('none', 'Open'), ('partner', 'Based on Customer'), ('invoice', 'Based on Invoice')], default='invoice', help='You can set here the default communication that will appear on customer invoices, once validated, to help the customer to refer to that particular invoice when making the payment.')
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
-    invoice_reference_model = fields.Selection(string='Communication Standard', required=True, selection=[('odoo', 'Calypso'), ('euro', 'European')], default=_default_invoice_reference_model, help="You can choose different models for each type of reference. The default one is the Calypso reference.")
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+    invoice_reference_model = fields.Selection(string='Communication Standard', required=True, selection=[('odoo', 'HaliBlu'), ('euro', 'European')], default=_default_invoice_reference_model, help="You can choose different models for each type of reference. The default one is the HaliBlu reference.")
 
     #groups_id = fields.Many2many('res.groups', 'account_journal_group_rel', 'journal_id', 'group_id', string='Groups')
     currency_id = fields.Many2one('res.currency', help='The currency used to enter statement', string="Currency")
@@ -138,7 +138,7 @@ class AccountJournal(models.Model):
 
                                           r"e.g: ^(?P<prefix1>.*?)(?P<year>\d{4})(?P<prefix2>\D*?)(?P<month>\d{2})(?P<prefix3>\D+?)(?P<seq>\d+)(?P<suffix>\D*?)$")
 
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     inbound_payment_method_line_ids = fields.One2many(
         comodel_name='account.payment.method.line',
         domain=[('payment_type', '=', 'inbound')],
@@ -149,13 +149,13 @@ class AccountJournal(models.Model):
         inverse_name='journal_id',
         copy=False,
         check_company=True,
-        help="Manual: Get paid by any method outside of Calypso.\n"
+        help="Manual: Get paid by any method outside of HaliBlu.\n"
         "Payment Providers: Each payment provider has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
         "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
         "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
     )
     
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'    
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'    
     outbound_payment_method_line_ids = fields.One2many(
         comodel_name='account.payment.method.line',
         domain=[('payment_type', '=', 'outbound')],
@@ -166,8 +166,8 @@ class AccountJournal(models.Model):
         inverse_name='journal_id',
         copy=False,
         check_company=True,
-        help="Manual: Pay by any method outside of Calypso.\n"
-        "Check: Pay bills by check and print it from Calypso.\n"
+        help="Manual: Pay by any method outside of HaliBlu.\n"
+        "Check: Pay bills by check and print it from HaliBlu.\n"
         "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
     )
     profit_account_id = fields.Many2one(
@@ -200,10 +200,10 @@ class AccountJournal(models.Model):
     sale_activity_note = fields.Text('Activity Summary')
 
     # alias configuration for journals    
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     alias_id = fields.Many2one(help="Send one separate email for each invoice.\n\n"
                                     "Any file extension will be accepted.\n\n"
-                                    "Only PDF and XML files will be interpreted by Calypso")
+                                    "Only PDF and XML files will be interpreted by HaliBlu")
 
     journal_group_ids = fields.Many2many('account.journal.group',
         check_company=True,

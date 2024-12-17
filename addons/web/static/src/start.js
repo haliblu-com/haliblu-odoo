@@ -24,8 +24,8 @@ export async function startWebClient(Webclient) {
     odoo.isReady = false;
 
     await whenReady();
-    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
-    const app = await mountComponent(Webclient, document.body, { name: "Calypso Web Client" });
+    // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+    const app = await mountComponent(Webclient, document.body, { name: "HaliBlu Web Client" });
     const { env } = app;
     Component.env = env;
 

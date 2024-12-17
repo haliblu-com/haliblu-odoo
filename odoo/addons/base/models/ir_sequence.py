@@ -146,9 +146,9 @@ class IrSequence(models.Model):
                                         "frequently so the displayed value might already be obsolete")
     number_increment = fields.Integer(string='Step', required=True, default=1,
                                       help="The next number of the sequence will be incremented by this number")
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     padding = fields.Integer(string='Sequence Size', required=True, default=0,
-                             help="Calypso will automatically adds some '0' on the left of the "
+                             help="HaliBlu will automatically adds some '0' on the left of the "
                                   "'Next Number' to get the required padding size.")
     company_id = fields.Many2one('res.company', string='Company',
                                  default=lambda s: s.env.company)

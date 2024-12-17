@@ -19,8 +19,8 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-        <title t-esc="title or 'Calypso'"/>
+        <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+        <title t-esc="title or 'HaliBlu'"/>
         <link type="image/x-icon" rel="shortcut icon" t-att-href="x_icon or '/web/static/img/haliblu-logo.png'"/>
         <script id="web.layout.odooscript" type="text/javascript">
             var odoo = {
@@ -89,11 +89,11 @@
 
     <template id="brand_promotion_message" name="Brand Promotion Message">
         <t t-set="odoo_logo">
-            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' and commenting the <a> tag</a> -->
+            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' and commenting the <a> tag</a> -->
             <!-- <a target="_blank"
                 t-attf-href="http://www.odoo.com?utm_source=db&amp;utm_medium=#{_utm_medium}"
                 class="badge text-bg-light"> -->
-                <img alt="Calypso"
+                <img alt="HaliBlu"
                     src="/web/static/img/odoo_logo_tiny.png"
                     width="62" height="20"
                     style="width: auto; height: 1em; vertical-align: baseline;"/>
@@ -331,11 +331,11 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </t>
             <div class="card">
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                <img t-attf-src="data:image/png;base64,{{odoo_icon}}" alt="Calypso logo"/>
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                <img t-attf-src="data:image/png;base64,{{odoo_icon}}" alt="HaliBlu logo"/>
                 <h1>You are offline</h1>
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                <p>Check your network connection and come back here. Calypso will load as soon as you're back online.</p>
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                <p>Check your network connection and come back here. HaliBlu will load as soon as you're back online.</p>
                 <button onclick="location.reload()">Check again</button>
             </div>
         </t>

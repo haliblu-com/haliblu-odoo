@@ -2,8 +2,8 @@
 <odoo>
     <data noupdate="1">
         <record id="digest_digest_default" model="digest.digest">
-            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-            <field name="name">Your Calypso Periodic Digest</field>
+            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+            <field name="name">Your HaliBlu Periodic Digest</field>
             <field name="periodicity">daily</field>
             <field name="user_ids" eval="[(4, ref('base.user_admin'))]"/>
             <field name="next_run_date" eval="DateTime.now().strftime('%Y-%m-%d')"/>
@@ -37,14 +37,14 @@
             </field>
         </record>
         <record id="digest_tip_digest_2" model="digest.tip">
-            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-            <field name="name">Tip: A calculator in Calypso</field>
+            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+            <field name="name">Tip: A calculator in HaliBlu</field>
             <field name="sequence">2300</field>
             <field name="group_id" ref="base.group_user" />
             <field name="tip_description" type="html">
 <div>
-    <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-    <p class="tip_title">Tip: A calculator in Calypso</p>
+    <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+    <p class="tip_title">Tip: A calculator in HaliBlu</p>
     <p class="tip_content">When editing a number, you can use formulae by typing the `=` character. This is useful when computing a margin or a discount on a quotation, sale order or invoice.</p>
     <img src="https://download.odoocdn.com/digests/digest/static/src/img/milk-calculator.gif" width="540" class="illustration_border" />
 </div>

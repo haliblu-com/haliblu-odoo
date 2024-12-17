@@ -252,9 +252,9 @@ class DisplayController(http.Controller):
         if not display_identifier and default_display != 0:
             display_identifier = default_display.device_identifier
     
-        # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+        # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
         return pos_display_template.render({
-            'title': "Calypso -- Point of Sale",
+            'title': "HaliBlu -- Point of Sale",
             'breadcrumb': 'POS Client display',
             'cust_js': cust_js,
             'display_ifaces': display_ifaces,

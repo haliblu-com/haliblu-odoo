@@ -510,11 +510,11 @@ class AccountReportExpression(models.Model):
     report_line_id = fields.Many2one(string="Report Line", comodel_name='account.report.line', required=True, ondelete='cascade')
     report_line_name = fields.Char(string="Report Line Name", related="report_line_id.name")
     label = fields.Char(string="Label", required=True)
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     engine = fields.Selection(
         string="Computation Engine",
         selection=[
-            ('domain', "Calypso Domain"),
+            ('domain', "HaliBlu Domain"),
             ('tax_tags', "Tax Tags"),
             ('aggregation', "Aggregate Other Formulas"),
             ('account_codes', "Prefix of Account Codes"),

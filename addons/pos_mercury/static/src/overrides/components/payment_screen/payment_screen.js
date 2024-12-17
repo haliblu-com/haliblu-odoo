@@ -276,9 +276,9 @@ patch(PaymentScreen.prototype, {
                 }
 
                 if (data === "internal error") {
-                    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                    // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
                     def.resolve({
-                        message: _t("Calypso error while processing transaction."),
+                        message: _t("HaliBlu error while processing transaction."),
                     });
                     return;
                 }
@@ -461,9 +461,9 @@ patch(PaymentScreen.prototype, {
                 }
 
                 if (data === "internal error") {
-                    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                    // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
                     def.resolve({
-                        message: _t("Calypso error while processing transaction."),
+                        message: _t("HaliBlu error while processing transaction."),
                     });
                     return;
                 }

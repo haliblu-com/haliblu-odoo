@@ -151,8 +151,8 @@
                                 <field name="zip" placeholder="ZIP" class="o_address_zip"/>
                                 <field name="country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
                             </div>
-                            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                            <field name="website" string="Website" widget="url" placeholder="e.g. https://www.calypso.com"/>
+                            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                            <field name="website" string="Website" widget="url" placeholder="e.g. https://www.HaliBlu.com"/>
                         </group>
                         <group>
                         </group>
@@ -233,8 +233,8 @@
                             <field name="mobile" widget="phone"/>
                             <field name="user_ids" invisible="1"/>
                             <field name="email" widget="email" context="{'gravatar_image': True}" required="user_ids"/>
-                            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                            <field name="website" string="Website" widget="url" placeholder="e.g. https://www.calypso.com"/>
+                            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                            <field name="website" string="Website" widget="url" placeholder="e.g. https://www.HaliBlu.com"/>
                             <field name="title" options='{"no_open": True}' placeholder="e.g. Mister"
                                 invisible="is_company"/>
                             <field name="active_lang_count" invisible="1"/>
@@ -538,8 +538,8 @@
               <p class="o_view_nocontent_smiling_face">
                 Create a Contact in your address book
               </p><p>
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                Calypso helps you track all activities related to your contacts.
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                HaliBlu helps you track all activities related to your contacts.
               </p>
             </field>
         </record>
@@ -573,8 +573,8 @@
               <p class="o_view_nocontent_smiling_face">
                 Create a new customer in your address book
               </p><p>
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                Calypso helps you easily track all activities related to a customer.
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                HaliBlu helps you easily track all activities related to a customer.
               </p>
             </field>
         </record>
@@ -608,8 +608,8 @@
               <p class="o_view_nocontent_smiling_face">
                 Create a new vendor in your address book
               </p><p>
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                Calypso helps you easily track all activities related to a vendor.
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                HaliBlu helps you easily track all activities related to a vendor.
               </p>
             </field>
         </record>

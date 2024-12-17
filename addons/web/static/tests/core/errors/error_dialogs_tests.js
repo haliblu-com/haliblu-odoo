@@ -45,8 +45,8 @@ QUnit.test("ErrorDialog with traceback", async (assert) => {
         },
     });
     assert.containsOnce(target, ".o_dialog");
-    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
-    assert.strictEqual(target.querySelector("header .modal-title").textContent, "Calypso Error");
+    // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+    assert.strictEqual(target.querySelector("header .modal-title").textContent, "HaliBlu Error");
     const mainButtons = target.querySelectorAll("main button");
     assert.deepEqual(
         [...mainButtons].map((el) => el.textContent),

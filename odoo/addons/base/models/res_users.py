@@ -753,8 +753,8 @@ class Users(models.Model):
         portal_user_template = self.env.ref('base.template_portal_user_id', False)
         default_user_template = self.env.ref('base.default_user', False)
         if SUPERUSER_ID in self.ids:
-            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
-            raise UserError(_('You can not remove the admin user as it is used internally for resources created by Calypso (updates, module installation, ...)'))
+            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
+            raise UserError(_('You can not remove the admin user as it is used internally for resources created by HaliBlu (updates, module installation, ...)'))
         user_admin = self.env.ref('base.user_admin', raise_if_not_found=False)
         if user_admin and user_admin in self:
             raise UserError(_('You cannot delete the admin user because it is utilized in various places (such as security configurations,...). Instead, archive it.'))
@@ -1257,12 +1257,12 @@ class Users(models.Model):
                 "\"base.login_cooldown_after\" to 0.",
                 source, user or "?", self.env.cr.dbname, failures, previous)
             if ipaddress.ip_address(source).is_private:
-                # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+                # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
                 _logger.warning(
                     "The rate-limited IP address %s is classified as private "
-                    "and *might* be a proxy. If your Calypso is behind a proxy, "
+                    "and *might* be a proxy. If your HaliBlu is behind a proxy, "
                     "it may be mis-configured. Check that you are running "
-                    "Calypso in Proxy Mode and that the proxy is properly configured, see "
+                    "HaliBlu in Proxy Mode and that the proxy is properly configured, see "
                     "https://www.odoo.com/documentation/17.0/administration/install/deploy.html#https for details.",
                     source
                 )

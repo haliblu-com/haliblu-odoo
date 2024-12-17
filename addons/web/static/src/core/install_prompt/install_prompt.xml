@@ -8,8 +8,8 @@
                     <div t-on-click="onClose" type="button" class="btn-close" aria-label="Close"/>
                 </div>
             </t>
-            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-            <p>Install Calypso on your device to access it easily. Here are the steps to follow:</p>
+            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+            <p>Install HaliBlu on your device to access it easily. Here are the steps to follow:</p>
             <t t-if="isMobileSafari">
                 <ul class="list-group list-group-numbered">
                     <li>

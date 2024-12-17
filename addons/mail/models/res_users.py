@@ -16,21 +16,21 @@ class Users(models.Model):
     _name = 'res.users'
     _inherit = ['res.users']
 
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     notification_type = fields.Selection([
         ('email', 'Handle by Emails'),
-        ('inbox', 'Handle in Calypso')],
+        ('inbox', 'Handle in HaliBlu')],
         'Notification', required=True, default='email',
         compute='_compute_notification_type', inverse='_inverse_notification_type', store=True,
         help="Policy on how to handle Chatter notifications:\n"
              "- Handle by Emails: notifications are sent to your email address\n"
-             "- Handle in Calypso: notifications appear in your Calypso Inbox")
+             "- Handle in HaliBlu: notifications appear in your HaliBlu Inbox")
 
-    # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     _sql_constraints = [(
         "notification_type",
         "CHECK (notification_type = 'email' OR NOT share)",
-        "Only internal user can receive notifications in Calypso",
+        "Only internal user can receive notifications in HaliBlu",
     )]
 
     @api.depends('share', 'groups_id')

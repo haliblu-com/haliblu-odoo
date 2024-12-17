@@ -994,8 +994,8 @@
             An order is to upsell when delivered quantities are above initially
             ordered quantities, and the invoicing policy is based on ordered quantities.
             </p><p>
-            <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-            As an example, if you sell pre-paid hours of services, Calypso recommends you
+            <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+            As an example, if you sell pre-paid hours of services, HaliBlu recommends you
             to sell extra hours when all ordered hours have been consumed.
             </p>
         </field>

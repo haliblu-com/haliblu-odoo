@@ -396,8 +396,8 @@
                                                 </div>
                                                 <div class="by_odoo" style="margin-bottom: 15px;">
                                                     <!-- Debranding odoo: Replaced 'Sent by <a href="https://www.odoo.com" target="_blank">
-                                                    <span class="odoo_link_text">Odoo</span></a>' with 'Sent by Calypso' -->
-                                                    Sent by Calypso
+                                                    <span class="odoo_link_text">Odoo</span></a>' with 'Sent by HaliBlu' -->
+                                                    Sent by HaliBlu
                                                     <t t-if="unsubscribe_token">
                                                         –
                                                         <a t-attf-href="/digest/#{object.id}/unsubscribe?token=#{unsubscribe_token}&amp;user_id=#{user.id}" target="_blank"

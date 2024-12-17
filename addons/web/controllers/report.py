@@ -135,10 +135,10 @@ class ReportController(http.Controller):
         except Exception as e:
             _logger.warning("Error while generating report %s", reportname, exc_info=True)
             se = http.serialize_exception(e)
-            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
             error = {
                 'code': 200,
-                'message': "Calypso Server Error",
+                'message': "HaliBlu Server Error",
                 'data': se
             }
             res = request.make_response(html_escape(json.dumps(error)))

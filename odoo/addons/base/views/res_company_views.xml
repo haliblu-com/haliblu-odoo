@@ -45,8 +45,8 @@
                                     <field name="phone" class="o_force_ltr"/>
                                     <field name="mobile" class="o_force_ltr"/>
                                     <field name="email"/>
-                                    <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                                    <field name="website" string="Website" widget="url" placeholder="e.g. https://www.calypso.com"/>
+                                    <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                                    <field name="website" string="Website" widget="url" placeholder="e.g. https://www.HaliBlu.com"/>
                                     <field name="parent_id" groups="base.group_no_one"/>
                                     <field name="parent_id" invisible="1"/>
                                     <field name="sequence" invisible="1"/>
@@ -130,8 +130,8 @@
               <p class="o_view_nocontent_smiling_face">
                 Create a new company
               </p><p>
-                <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                Create and manage the companies that will be managed by Calypso from here. Shops or subsidiaries can be created and maintained from here.
+                <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                Create and manage the companies that will be managed by HaliBlu from here. Shops or subsidiaries can be created and maintained from here.
               </p>
             </field>
         </record>

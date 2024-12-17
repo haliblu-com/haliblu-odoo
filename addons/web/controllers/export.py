@@ -515,10 +515,10 @@ class CSVExport(ExportFormat, http.Controller):
             return self.base(data)
         except Exception as exc:
             _logger.exception("Exception during request handling.")
-            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
             payload = json.dumps({
                 'code': 200,
-                'message': "Calypso Server Error",
+                'message': "HaliBlu Server Error",
                 'data': http.serialize_exception(exc)
             })
             raise InternalServerError(payload) from exc
@@ -560,10 +560,10 @@ class ExcelExport(ExportFormat, http.Controller):
             return self.base(data)
         except Exception as exc:
             _logger.exception("Exception during request handling.")
-            # Debranding odoo: Replaced 'Odoo' with 'Calypso'
+            # Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
             payload = json.dumps({
                 'code': 200,
-                'message': "Calypso Server Error",
+                'message': "HaliBlu Server Error",
                 'data': http.serialize_exception(exc)
             })
             raise InternalServerError(payload) from exc

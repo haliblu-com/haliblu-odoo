@@ -16,8 +16,8 @@
             <div t-if="!props.options.has_headers" class="border-bottom p-2">
                 <p class="alert alert-info mb-0">
                     If the file contains
-                    <!-- Debranding odoo: Replaced 'Odoo' with 'Calypso' -->
-                    the column names, Calypso can try auto-detecting the
+                    <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->
+                    the column names, HaliBlu can try auto-detecting the
                     field corresponding to the column. This makes imports
                     simpler especially when the file has many columns.
                 </p>

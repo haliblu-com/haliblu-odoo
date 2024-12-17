@@ -44,9 +44,9 @@ whenReady(() => {
 
     // start application
     await whenReady();
-    // Debranding odoo: Replaced 'Odoo' with 'Calypso'
+    // Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
     const app = new App(Chrome, {
-        name: "Calypso Point of Sale",
+        name: "HaliBlu Point of Sale",
         env,
         templates,
         dev: env.debug,

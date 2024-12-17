@@ -126,7 +126,7 @@ Dialog.props = {
     },
     withBodyPadding: { type: Boolean, optional: true },
 };
-// Debranding odoo: Replaced 'Odoo' with 'Calypso'
+// Debranding odoo: Replaced 'Odoo' with 'HaliBlu'
 Dialog.defaultProps = {
     contentClass: "",
     bodyClass: "",
@@ -135,6 +135,6 @@ Dialog.defaultProps = {
     header: true,
     size: "lg",
     technical: true,
-    title: "Calypso",
+    title: "HaliBlu",
     withBodyPadding: true,
 };
