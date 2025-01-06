@@ -37,10 +37,7 @@ import pytz
 import re
 import uuid
 import warnings
-import json
 from collections import defaultdict, OrderedDict, deque
-from bs4 import BeautifulSoup
-from markupsafe import Markup
 from collections.abc import MutableMapping
 from contextlib import closing
 from inspect import getmembers, currentframe
@@ -192,53 +189,6 @@ def check_company_domain_parent_of(self, companies):
         for parent in rec.parent_path.split('/')[:-1]
     ])]
 
-def unminify_string(html, indent=0):
-    soup = BeautifulSoup(html, 'html.parser')
-    formatted_html = ""
-
-    # Process each child of the root separately
-    for child in soup.contents:
-        formatted_html += format_tag(child, indent).strip() + "\n"
-
-    return Markup(formatted_html.strip())
-
-def format_tag(tag, indent_level):
-    formatted_html = ""
-    indent = " " * (indent_level * 4)  # 4 spaces per indentation level
-
-    if tag.name:
-        children = [child for child in tag.contents if child.name]
-        text_children = [child for child in tag.contents if not child.name and child.strip()]
-
-        # Opening tag
-        formatted_html += f"{indent}<{tag.name}"
-        for attr, value in tag.attrs.items():
-            if isinstance(value, list):  # Ensure class attributes are rendered correctly
-                value = " ".join(value)
-            formatted_html += f' {attr}="{value}"'
-        formatted_html += ">"
-
-        if len(children) == 1 and not text_children:
-            # One child tag, no new lines or indentation
-            formatted_html += format_tag(children[0], 0)
-        else:
-            # Multiple children or text content, add new lines and indentations
-            if text_children:
-                # Text content inside the tag
-                formatted_html += tag.get_text(strip=True)
-            if children:
-                formatted_html += "\n"
-                for child in children:
-                    formatted_html += format_tag(child, indent_level + 1) + "\n"
-                formatted_html += indent
-
-        # Closing tag
-        formatted_html += f"</{tag.name}>"
-    elif tag.string:
-        # Handle strings/text content
-        formatted_html += indent + tag.string.strip()
-
-    return formatted_html
 
 class MetaModel(api.Meta):
     """ The metaclass of all model classes.
@@ -3662,8 +3612,8 @@ class BaseModel(metaclass=MetaModel):
         if field.related and not field.store:
             related_path, field_name = field.related.rsplit(".", 1)
             return self.mapped(related_path)._update_field_translations(field_name, translations, digest)
-        
-        if field.translate is True or callable(field.translate):
+
+        if field.translate is True:
             # falsy values (except emtpy str) are used to void the corresponding translation
             if any(translation and not isinstance(translation, str) for translation in translations.values()):
                 raise UserError(_("Translations for model translated fields only accept falsy values and str"))
@@ -3695,6 +3645,38 @@ class BaseModel(metaclass=MetaModel):
                 id=self.id,
             ))
             self.modified([field_name])
+        else:
+            # Note:
+            # update terms in 'en_US' will not change its value other translated values
+            # record_en = Model_en.create({'html': '<div>English 1</div><div>English 2<div/>'
+            # record_en.update_field_translations('html', {'fr_FR': {'English 2': 'French 2'}}
+            # record_en.update_field_translations('html', {'en_US': {'English 1': 'English 3'}}
+            # assert record_en                            == '<div>English 3</div><div>English 2<div/>'
+            # assert record_fr.with_context(lang='fr_FR') == '<div>English 1</div><div>French 2<div/>'
+            # assert record_nl.with_context(lang='nl_NL') == '<div>English 3</div><div>English 2<div/>'
+
+            stored_translations = field._get_stored_translations(self)
+            if not stored_translations:
+                return False
+            old_translations = {
+                k: stored_translations.get(f'_{k}', v)
+                for k, v in stored_translations.items()
+                if not k.startswith('_')
+            }
+            for lang, translation in translations.items():
+                old_value = old_translations.get(lang) or old_translations.get('en_US')
+                if digest:
+                    old_terms = field.get_trans_terms(old_value)
+                    old_terms_digested2value = {digest(old_term): old_term for old_term in old_terms}
+                    translation = {
+                        old_terms_digested2value[key]: value
+                        for key, value in translation.items()
+                        if key in old_terms_digested2value
+                    }
+                stored_translations[lang] = field.translate(translation.get, old_value)
+                stored_translations.pop(f'_{lang}', None)
+            self.env.cache.update_raw(self, field, [stored_translations], dirty=True)
+
         # the following write is incharge of
         # 1. mark field as modified
         # 2. execute logics in the override `write` method
@@ -3720,12 +3702,22 @@ class BaseModel(metaclass=MetaModel):
         val_en = self_lang.with_context(lang='en_US')[field_name]
         if not field.translate:
             translations = []
-        elif field.translate is True or callable(field.translate):
+        elif field.translate is True:
             translations = [{
                 'lang': lang,
                 'source': val_en,
-                'value': unminify_string(self_lang.with_context(lang=lang)[field_name]) if callable(field.translate) and self_lang.with_context(lang=lang)[field_name] else self_lang.with_context(lang=lang)[field_name]
+                'value': self_lang.with_context(lang=lang)[field_name]
             } for lang in langs]
+        else:
+            translation_dictionary = field.get_translation_dictionary(
+                val_en, {lang: self_lang.with_context(lang=lang)[field_name] for lang in langs}
+            )
+            translations = [{
+                'lang': lang,
+                'source': term_en,
+                'value': term_lang if term_lang != term_en else ''
+            } for term_en, translations in translation_dictionary.items()
+                for lang, term_lang in translations.items()]
         context = {}
         context['translation_type'] = field.type if field.type in ['text', 'html'] else 'char'
         context['translation_show_source'] = callable(field.translate)
