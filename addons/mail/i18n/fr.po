@@ -31,20 +31,20 @@ msgid ""
 "            <p class=\"o_view_nocontent_smiling_face\">\n"
 "                Add addresses to the Allowed List\n"
 "            </p><p>\n"
-"                To protect you from spam and reply loops, Odoo automatically blocks emails\n"
+"                To protect you from spam and reply loops, HaliBlu automatically blocks emails\n"
 "                coming to your gateway past a threshold of <b>%(threshold)i</b> emails every <b>%(minutes)i</b>\n"
 "                minutes. If there are some addresses from which you need to receive very frequent\n"
-"                updates, you can however add them below and Odoo will let them go through.\n"
+"                updates, you can however add them below and HaliBlu will let them go through.\n"
 "            </p>"
 msgstr ""
 "\n"
 "            <p class=\"o_view_nocontent_smiling_face\">\n"
 "                Ajouter des adresses à la liste des adresses autorisées\n"
 "            </p><p>\n"
-"                Pour vous protéger des spams et des boucles de réponse, Odoo bloque automatiquement des e-mails\n"
+"                Pour vous protéger des spams et des boucles de réponse, HaliBlu bloque automatiquement des e-mails\n"
 "                venant de votre passerelle au-delà d'un seuil de <b>%(threshold)i</b> e-mails toutes les <b>%(minutes)i</b>\n"
 "                minutes. S'il y a toutefois certaines adresses qui vous envoient très fréquemment des\n"
-"                mises à jour, vous pouvez les ajouter ci-dessous et Odoo les laissera passer.\n"
+"                mises à jour, vous pouvez les ajouter ci-dessous et HaliBlu les laissera passer.\n"
 "            </p>"
 
 #. module: mail
@@ -2151,8 +2151,8 @@ msgstr "Recueillir des réponses pour une adresse e-mail spécifique"
 #. odoo-javascript
 #: code:addons/mail/static/src/core/web/messaging_menu.js:0
 #, python-format
-msgid "Come here often? Install Odoo on your device!"
-msgstr "Vous venez souvent par ici ? Installez Odoo sur votre appareil !"
+msgid "Come here often? Install HaliBlu on your device!"
+msgstr "Vous venez souvent par ici ? Installez HaliBlu sur votre appareil !"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
@@ -4258,8 +4258,8 @@ msgstr "Recevoir par e-mail"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__inbox
-msgid "Handle in Odoo"
-msgstr "Recevoir dans Odoo"
+msgid "Handle in HaliBlu"
+msgstr "Recevoir dans HaliBlu"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity_schedule__has_error
@@ -4673,11 +4673,11 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__alias_domain_id
 msgid ""
-"If you have setup a catch-all email domain redirected to the Odoo server, "
+"If you have setup a catch-all email domain redirected to the HaliBlu server, "
 "enter the domain name here."
 msgstr ""
 "Si vous avez configuré un domain d'e-mail \"catch-all\" redirigé vers le "
-"serveur d'Odoo, entrez le nom du domaine ici."
+"serveur d'HaliBlu, entrez le nom du domaine ici."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__use_twilio_rtc_servers
@@ -7476,11 +7476,11 @@ msgstr "Veuillez patienter pendant le téléchargement du fichier."
 msgid ""
 "Policy on how to handle Chatter notifications:\n"
 "- Handle by Emails: notifications are sent to your email address\n"
-"- Handle in Odoo: notifications appear in your Odoo Inbox"
+"- Handle in HaliBlu: notifications appear in your HaliBlu Inbox"
 msgstr ""
 "Politique de gestion des notifications de messagerie:\n"
 "- Gérer par E-mails: Les notifications sont envoyées à votre adresse e-mail\n"
-"- Gérer dans Odoo: Les notifications apparaitront dans votre boîte de réception Odoo"
+"- Gérer dans HaliBlu: Les notifications apparaitront dans votre boîte de réception HaliBlu"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_contact
@@ -9666,11 +9666,11 @@ msgstr "Cette mise en page ne semble plus exister."
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your HaliBlu database."
 msgstr ""
 "Cette option supprime définitivement quelconque trace de l'e-mail après son "
 "envoi, y compris du Menu technique dans les Paramètres, afin de préserver de"
-" l'espace de stockage dans votre base de données Odoo."
+" l'espace de stockage dans votre base de données HaliBlu."
 
 #. module: mail
 #. odoo-javascript
