@@ -118,10 +118,10 @@ msgstr "Claves API"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"API Keys allow your users to access Odoo with external tools when multi-"
+"API Keys allow your users to access HaliBlu with external tools when multi-"
 "factor authentication is enabled."
 msgstr ""
-"Las claves API permiten a sus usuarios acceder a Odoo mediante herramientas "
+"Las claves API permiten a sus usuarios acceder a HaliBlu mediante herramientas "
 "externas cuando la autenticación de múltiples factores está habilitada."
 
 #. module: base_setup
@@ -448,8 +448,8 @@ msgstr "Autenticación OAuth"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Odoo"
-msgstr "Odoo"
+msgid "HaliBlu"
+msgstr "HaliBlu"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -538,10 +538,10 @@ msgstr ""
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"This name will be used for the application when Odoo is installed through "
+"This name will be used for the application when HaliBlu is installed through "
 "the browser."
 msgstr ""
-"Este nombre se utilizará para la aplicación cuando se instale Odoo a través "
+"Este nombre se utilizará para la aplicación cuando se instale HaliBlu a través "
 "del navegador."
 
 #. module: base_setup
@@ -589,11 +589,11 @@ msgstr "NIF"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, HaliBlu provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Cuando termine de crear su libreta de direcciones, Odoo proporcionará una "
+"Cuando termine de crear su libreta de direcciones, HaliBlu proporcionará una "
 "lista de compañías coincidentes. Si selecciona un elemento, los datos de la "
 "compañía y el logo se completarán automáticamente."
 

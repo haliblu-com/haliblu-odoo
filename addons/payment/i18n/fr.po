@@ -43,12 +43,12 @@ msgstr ""
 msgid ""
 "<i class=\"fa fa-exclamation-triangle\"/> These properties are set to\n"
 "                                match the behavior of providers and that of their integration with\n"
-"                                Odoo regarding this payment method. Any change may result in errors\n"
+"                                HaliBlu regarding this payment method. Any change may result in errors\n"
 "                                and should be tested on a test database first."
 msgstr ""
 "<i class=\"fa fa-exclamation-triangle\"/> Ces propriétés sont définies pour\n"
 "                                correspondre au comportement des fournisseurs et de leur intégration avec\n"
-"                                Odoo concernant ce mode de paiement. Toute modification peut entraîner des erreurs\n"
+"                                HaliBlu concernant ce mode de paiement. Toute modification peut entraîner des erreurs\n"
 "                                et doit d'abord être testée sur une base de données de test."
 
 #. module: payment
@@ -508,11 +508,11 @@ msgstr "Capturer la transaction"
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_provider__capture_manually
 msgid ""
-"Capture the amount from Odoo, when the delivery is completed.\n"
+"Capture the amount from HaliBlu, when the delivery is completed.\n"
 "Use this if you want to charge your customers cards only when\n"
 "you are sure you can ship the goods to them."
 msgstr ""
-"Capturez le montant depuis Odoo quand la livraison est effectuée.\n"
+"Capturez le montant depuis HaliBlu quand la livraison est effectuée.\n"
 "Utilisez-le si vous voulez débiter les cartes de vos clients uniquement quand\n"
 "vous êtes sûr de pouvoir leur livrer la marchandise."
 
@@ -1070,8 +1070,8 @@ msgstr "Aucun jeton ne peut être assigné au partenaire public."
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__module_to_buy
-msgid "Odoo Enterprise Module"
-msgstr "Module Enterprise Odoo"
+msgid "HaliBlu Enterprise Module"
+msgstr "Module Enterprise HaliBlu"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__operation__offline
@@ -1459,10 +1459,10 @@ msgstr "Remboursement"
 #: model:ir.model.fields,help:payment.field_payment_method__support_refund
 msgid ""
 "Refund is a feature allowing to refund customers directly from the payment "
-"in Odoo."
+"in HaliBlu."
 msgstr ""
 "Le remboursement est une fonctionnalité permettant de rembourser les clients"
-" directement à partir du paiement dans Odoo."
+" directement à partir du paiement dans HaliBlu."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form

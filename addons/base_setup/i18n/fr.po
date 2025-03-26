@@ -122,10 +122,10 @@ msgstr "Clés API"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"API Keys allow your users to access Odoo with external tools when multi-"
+"API Keys allow your users to access HaliBlu with external tools when multi-"
 "factor authentication is enabled."
 msgstr ""
-"Les clés API permettent à vos utilisateurs d'accéder à Odoo avec des outils "
+"Les clés API permettent à vos utilisateurs d'accéder à HaliBlu avec des outils "
 "externes lorsque l'authentification à facteurs multiples est activée."
 
 #. module: base_setup
@@ -455,8 +455,8 @@ msgstr "Authentification OAuth"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Odoo"
-msgstr "Odoo"
+msgid "HaliBlu"
+msgstr "HaliBlu"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -546,10 +546,10 @@ msgstr ""
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"This name will be used for the application when Odoo is installed through "
+"This name will be used for the application when HaliBlu is installed through "
 "the browser."
 msgstr ""
-"Ce nom sera utilisé pour l'application lorsqu'Odoo est installé par le biais"
+"Ce nom sera utilisé pour l'application lorsqu'HaliBlu est installé par le biais"
 " du navigateur."
 
 #. module: base_setup
@@ -600,11 +600,11 @@ msgstr "TVA"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, HaliBlu provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Lors du remplissage de votre carnet d'adresses, Odoo fournit une liste des "
+"Lors du remplissage de votre carnet d'adresses, HaliBlu fournit une liste des "
 "entreprises correspondantes. Lorsque vous sélectionnez un élément, les "
 "données de la société et le logo sont automatiquement renseignés."
 

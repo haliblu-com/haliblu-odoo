@@ -2253,8 +2253,8 @@ msgstr "Elenco numerato"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.tests
-msgid "Odoo Editor Tests"
-msgstr "Prove Editor Odoo"
+msgid "HaliBlu Editor Tests"
+msgstr "Prove Editor HaliBlu"
 
 #. module: web_editor
 #. odoo-python
@@ -3263,10 +3263,10 @@ msgstr "Immagine di tipo esterno"
 #, python-format
 msgid ""
 "This type of image is not supported for cropping.<br/>If you want to crop "
-"it, please first download it from the original source and upload it in Odoo."
+"it, please first download it from the original source and upload it in HaliBlu."
 msgstr ""
 "Ritaglio non supportato per questo tipo di immagine.<br/>Per effettuare il "
-"ritaglio, scaricare prima l'immagine originale e caricarla in Odoo."
+"ritaglio, scaricare prima l'immagine originale e caricarla in HaliBlu."
 
 #. module: web_editor
 #. odoo-javascript

@@ -2151,12 +2151,12 @@ msgstr "Inserisci un numero intero positivo."
 #, python-format
 msgid ""
 "Please enter a valid URL.\n"
-"Example: https://www.odoo.com\n"
+"Example: https://www.haliblu.com\n"
 "\n"
 "Invalid URL: %s"
 msgstr ""
 "Inserire un URL valido.\n"
-"Esempio: https://www.odoo.com\n"
+"Esempio: https://www.haliblu.com\n"
 "\n"
 "URL non valido: %s"
 
@@ -3969,8 +3969,8 @@ msgstr "es. lampade"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "e.g. Odoo Enterprise Subscription"
-msgstr "es. abbonamento a Odoo Enterprise"
+msgid "e.g. HaliBlu Enterprise Subscription"
+msgstr "es. abbonamento a HaliBlu Enterprise"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view

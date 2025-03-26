@@ -1303,10 +1303,10 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_orders_upselling
 msgid ""
-"As an example, if you sell pre-paid hours of services, Odoo recommends you\n"
+"As an example, if you sell pre-paid hours of services, HaliBlu recommends you\n"
 "            to sell extra hours when all ordered hours have been consumed."
 msgstr ""
-"Par exemple, si vous vendez des heures de services prépayées, Odoo vous recommande\n"
+"Par exemple, si vous vendez des heures de services prépayées, HaliBlu vous recommande\n"
 "de vendre des heures supplémentaires lorsque toutes les heures commandées ont été consommées."
 
 #. module: sale

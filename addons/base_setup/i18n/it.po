@@ -119,10 +119,10 @@ msgstr "Chiavi API"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"API Keys allow your users to access Odoo with external tools when multi-"
+"API Keys allow your users to access HaliBlu with external tools when multi-"
 "factor authentication is enabled."
 msgstr ""
-"Le chiavi API permettono ai tuoi utenti di accedere a Odoo con strumenti  "
+"Le chiavi API permettono ai tuoi utenti di accedere a HaliBlu con strumenti  "
 "esterni quando è attiva l'autenticazione a più fattori."
 
 #. module: base_setup
@@ -537,10 +537,10 @@ msgstr ""
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"This name will be used for the application when Odoo is installed through "
+"This name will be used for the application when HaliBlu is installed through "
 "the browser."
 msgstr ""
-"Questo nome verrà utilizzato per l'applicazione quando Odoo viene installato"
+"Questo nome verrà utilizzato per l'applicazione quando HaliBlu viene installato"
 " attraverso il browser."
 
 #. module: base_setup
@@ -588,11 +588,11 @@ msgstr "Partita IVA"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, HaliBlu provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Quando compili la tua rubrica di indirizzi, Odoo fornisce un elenco di "
+"Quando compili la tua rubrica di indirizzi, HaliBlu fornisce un elenco di "
 "aziende corrispondenti. Quando selezioni uno elemento, i dati e il logo "
 "dell'azienda vengono compilati automaticamente."
 

@@ -95,9 +95,9 @@ msgstr "Dispositivo de autenticación"
 
 #. module: auth_totp_mail
 #: model:mail.template,subject:auth_totp_mail.mail_template_totp_invite
-msgid "Invitation to activate two-factor authentication on your Odoo account"
+msgid "Invitation to activate two-factor authentication on your HaliBlu account"
 msgstr ""
-"Invitación a activar la autenticación de dos factores en su cuenta de Odoo"
+"Invitación a activar la autenticación de dos factores en su cuenta de HaliBlu"
 
 #. module: auth_totp_mail
 #. odoo-python

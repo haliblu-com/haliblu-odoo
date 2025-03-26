@@ -434,12 +434,12 @@ msgstr "ID"
 #, python-format
 msgid ""
 "If the file contains\n"
-"                    the column names, Odoo can try auto-detecting the\n"
+"                    the column names, HaliBlu can try auto-detecting the\n"
 "                    field corresponding to the column. This makes imports\n"
 "                    simpler especially when the file has many columns."
 msgstr ""
 "Se il file contiene\n"
-"i nomi delle colonne, Odoo può provare a rilevare automaticamente il\n"
+"i nomi delle colonne, HaliBlu può provare a rilevare automaticamente il\n"
 "campo corrispondente alla colonna. Questo rende le importazioni\n"
 "più semplice soprattutto quando il file ha molte colonne."
 
@@ -600,8 +600,8 @@ msgstr "Nessun record corrispondente trovato per il nome seguente"
 #. odoo-javascript
 #: code:addons/base_import/static/src/import_data_content/import_data_content.xml:0
 #, python-format
-msgid "Odoo Field"
-msgstr "Campo Odoo"
+msgid "HaliBlu Field"
+msgstr "Campo HaliBlu"
 
 #. module: base_import
 #. odoo-javascript
@@ -888,12 +888,12 @@ msgstr "Carica un file Excel o CSV da importare"
 msgid ""
 "Use HH for hours in a 24h system, use II in conjonction with 'p' for a 12h "
 "system. You can use a custom format in addition to the suggestions provided."
-" Leave empty to let Odoo guess the format (recommended)"
+" Leave empty to let HaliBlu guess the format (recommended)"
 msgstr ""
 "Utilizza HH per indicare l'orario in un sistema di 24 ore, utilizza II con "
 "\"p\" per un sistema di 12 ore. È possibile utilizzare un formato "
 "personalizzato in aggiunta ai suggerimenti forniti. Lascia vuoto per "
-"permettere a Odoo di indovinare il formato (consigliato)"
+"permettere a HaliBlu di indovinare il formato (consigliato)"
 
 #. module: base_import
 #. odoo-javascript
@@ -902,13 +902,13 @@ msgstr ""
 msgid ""
 "Use YYYY to represent the year, MM for the month and DD for the day. Include"
 " separators such as a dot, forward slash or dash. You can use a custom "
-"format in addition to the suggestions provided. Leave empty to let Odoo "
+"format in addition to the suggestions provided. Leave empty to let HaliBlu "
 "guess the format (recommended)"
 msgstr ""
 "Utilizza AAAA per rappresentare l'anno, MM per il mese e GG per il giorno. "
 "Comprende separatori come il punto, la barra o il trattino. È possibile "
 "utilizzare un formato personalizzato in aggiunta ai suggerimenti forniti. "
-"Lascia vuoto per permettere a Odood i indovinare il formato (raccomandato)"
+"Lascia vuoto per permettere a HaliBlud i indovinare il formato (raccomandato)"
 
 #. module: base_import
 #. odoo-javascript
@@ -949,7 +949,7 @@ msgid ""
 "for the reason."
 msgstr ""
 "Non si possono importare immagini via URL, controlla con il tuo "
-"amministratore o chiedi a Odoo support per le ragioni."
+"amministratore o chiedi a HaliBlu support per le ragioni."
 
 #. module: base_import
 #. odoo-javascript

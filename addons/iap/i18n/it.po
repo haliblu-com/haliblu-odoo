@@ -176,8 +176,8 @@ msgstr "Nome"
 
 #. module: iap
 #: model_terms:ir.ui.view,arch_db:iap.res_config_settings_view_form
-msgid "Odoo IAP"
-msgstr "Acquisti integrati Odoo"
+msgid "HaliBlu IAP"
+msgstr "Acquisti integrati HaliBlu"
 
 #. module: iap
 #: model:ir.model.fields,field_description:iap.field_iap_account_info__service_name
@@ -199,8 +199,8 @@ msgstr "Mostra token"
 #. odoo-javascript
 #: code:addons/iap/static/src/js/insufficient_credit_error_handler.js:0
 #, python-format
-msgid "Start a Trial at Odoo"
-msgstr "Inizia una prova con Odoo"
+msgid "Start a Trial at HaliBlu"
+msgstr "Inizia una prova con HaliBlu"
 
 #. module: iap
 #. odoo-python

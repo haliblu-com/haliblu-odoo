@@ -548,11 +548,11 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:analytic.account_analytic_line_action
 #: model_terms:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
 msgid ""
-"In Odoo, sales orders and projects are implemented using\n"
+"In HaliBlu, sales orders and projects are implemented using\n"
 "                analytic accounts. You can track costs and revenues to analyse\n"
 "                your margins easily."
 msgstr ""
-"In Odoo werden Verkaufsaufträge und Projekte mit Hilfe von\n"
+"In HaliBlu werden Verkaufsaufträge und Projekte mit Hilfe von\n"
 "Kostenstellen gepflegt. Sie können einfach Kosten und Erlöse nachverfolgen, um ihre Margen zu analysieren."
 
 #. module: analytic

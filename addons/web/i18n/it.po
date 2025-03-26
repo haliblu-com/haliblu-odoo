@@ -1733,10 +1733,10 @@ msgstr "Controlla di nuovo"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.webclient_offline
 msgid ""
-"Check your network connection and come back here. Odoo will load as soon as "
+"Check your network connection and come back here. HaliBlu will load as soon as "
 "you're back online."
 msgstr ""
-"Verifica la connessione internet e torna qui. Odoo sarà pronto non appena "
+"Verifica la connessione internet e torna qui. HaliBlu sarà pronto non appena "
 "tornerai online."
 
 #. module: web
@@ -3410,8 +3410,8 @@ msgstr "Ottieni vista"
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/settings_form_view/fields/upgrade_dialog.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "Ottieni questa e altre funzionalità aggiuntive con Odoo Enterprise."
+msgid "Get this feature and much more with HaliBlu Enterprise!"
+msgstr "Ottieni questa e altre funzionalità aggiuntive con HaliBlu Enterprise."
 
 #. module: web
 #. odoo-javascript
@@ -3704,10 +3704,10 @@ msgstr "Incluso archiviati"
 #: code:addons/web/static/src/core/install_prompt/install_prompt.xml:0
 #, python-format
 msgid ""
-"Install Odoo on your device to access it easily. Here are the steps to "
+"Install HaliBlu on your device to access it easily. Here are the steps to "
 "follow:"
 msgstr ""
-"Installa Odoo sul tuo dispositivo per accedervi facilmente. Ecco gli step da"
+"Installa HaliBlu sul tuo dispositivo per accedervi facilmente. Ecco gli step da"
 " seguire:"
 
 #. module: web
@@ -4760,8 +4760,8 @@ msgstr "musulmano"
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "Account Odoo.com"
+msgid "My HaliBlu.com account"
+msgstr "Account HaliBlu.com"
 
 #. module: web
 #. odoo-javascript
@@ -5209,84 +5209,84 @@ msgstr "Oggetti"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "HaliBlu"
+msgstr "HaliBlu"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Errore client Odoo"
+msgid "HaliBlu Client Error"
+msgstr "Errore client HaliBlu"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Errore Odoo"
+msgid "HaliBlu Error"
+msgstr "Errore HaliBlu"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "Errore Odoo Network"
+msgid "HaliBlu Network Error"
+msgstr "Errore HaliBlu Network"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/widgets/notification_alert/notification_alert.xml:0
 #, python-format
 msgid ""
-"Odoo Push notifications have been blocked. Go to your browser settings to "
+"HaliBlu Push notifications have been blocked. Go to your browser settings to "
 "allow them."
 msgstr ""
-"Le notifiche push di Odoo sono state bloccate. Per consentirle, andare nelle"
+"Le notifiche push di HaliBlu sono state bloccate. Per consentirle, andare nelle"
 " impostazioni del browser."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "HaliBlu S.A."
+msgstr "HaliBlu S.A."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "Errore Odoo Server"
+msgid "HaliBlu Server Error"
+msgstr "Errore HaliBlu Server"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Sessione Odoo scaduta"
+msgid "HaliBlu Session Expired"
+msgstr "Sessione HaliBlu scaduta"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Avviso Odoo"
+msgid "HaliBlu Warning"
+msgstr "Avviso HaliBlu"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.webclient_offline
-msgid "Odoo logo"
-msgstr "Logo Odoo"
+msgid "HaliBlu logo"
+msgstr "Logo HaliBlu"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/barcode/barcode_scanner.js:0
 #, python-format
-msgid "Odoo needs your authorization first."
-msgstr "Odoo ha bisogno della tua autorizzazione prima."
+msgid "HaliBlu needs your authorization first."
+msgstr "HaliBlu ha bisogno della tua autorizzazione prima."
 
 #. module: web
 #. odoo-javascript
@@ -5690,8 +5690,8 @@ msgstr "Fornito da %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "Fornito da <span>Odoo</span>"
+msgid "Powered by <span>HaliBlu</span>"
+msgstr "Fornito da <span>HaliBlu</span>"
 
 #. module: web
 #. odoo-javascript
@@ -8221,10 +8221,10 @@ msgstr ""
 #: code:addons/web/static/src/webclient/actions/reports/utils.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start HaliBlu with at least two workers to print a pdf version of "
 "the reports."
 msgstr ""
-"Per stampare una versione PDF dei report è necessario avviare Odoo con "
+"Per stampare una versione PDF dei report è necessario avviare HaliBlu con "
 "almeno due worker."
 
 #. module: web
@@ -8245,9 +8245,9 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
+msgid "Your HaliBlu session expired. The current page is about to be refreshed."
 msgstr ""
-"La sessione Odoo è scaduta. La pagina corrente sta per essere aggiornata."
+"La sessione HaliBlu è scaduta. La pagina corrente sta per essere aggiornata."
 
 #. module: web
 #. odoo-javascript

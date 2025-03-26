@@ -66,7 +66,7 @@ class IotBoxOwlHomePage(Home):
         helpers.odoo_restart(0)
         return json.dumps({
             'status': 'success',
-            'message': 'Odoo service restarted',
+            'message': 'HaliBlu service restarted',
         })
 
     @http.route('/hw_posbox_homepage/restart_iotbox', auth='none', type='http', cors='*')
@@ -288,7 +288,7 @@ class IotBoxOwlHomePage(Home):
             'message': 'Connecting to ' + essid,
             'server': {
                 'url': server or 'http://' + helpers.get_ip() + ':8069',
-                'message': 'Redirect to Odoo Server' if server else 'Redirect to IoT Box'
+                'message': 'Redirect to HaliBlu Server' if server else 'Redirect to IoT Box'
             }
         }
 

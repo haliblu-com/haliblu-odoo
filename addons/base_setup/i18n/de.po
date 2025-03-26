@@ -121,10 +121,10 @@ msgstr "API-Schlüssel"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"API Keys allow your users to access Odoo with external tools when multi-"
+"API Keys allow your users to access HaliBlu with external tools when multi-"
 "factor authentication is enabled."
 msgstr ""
-"API-Schlüssel ermöglichen es Ihren Benutzern, mit externen Tools auf Odoo "
+"API-Schlüssel ermöglichen es Ihren Benutzern, mit externen Tools auf HaliBlu "
 "zuzugreifen, wenn die Multi-Faktor-Authentifizierung aktiviert ist."
 
 #. module: base_setup
@@ -452,8 +452,8 @@ msgstr "OAuth-Authentifizierung"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Odoo"
-msgstr "Odoo"
+msgid "HaliBlu"
+msgstr "HaliBlu"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -542,10 +542,10 @@ msgstr ""
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"This name will be used for the application when Odoo is installed through "
+"This name will be used for the application when HaliBlu is installed through "
 "the browser."
 msgstr ""
-"Dieser Name wird für die Anwendung verwendet, wenn Odoo über den Browser "
+"Dieser Name wird für die Anwendung verwendet, wenn HaliBlu über den Browser "
 "installiert wird."
 
 #. module: base_setup
@@ -593,11 +593,11 @@ msgstr "USt-IdNr."
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, HaliBlu provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Beim Auffüllen Ihres Adressbuchs stellt Odoo eine Liste passender "
+"Beim Auffüllen Ihres Adressbuchs stellt HaliBlu eine Liste passender "
 "Unternehmen zur Verfügung. Bei der Auswahl eines Artikels werden die "
 "Unternehmensdaten und das Logo automatisch ausgefüllt."
 

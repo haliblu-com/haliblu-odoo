@@ -37,7 +37,7 @@ class Alias(models.Model):
     # email definition
     alias_name = fields.Char(
         'Alias Name', copy=False,
-        help="The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.odoo.com>")
+        help="The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.haliblu.com>")
     alias_full_name = fields.Char('Alias Email', compute='_compute_alias_full_name', store=True, index='btree_not_null')
     display_name = fields.Char(string='Display Name', compute='_compute_display_name')
     alias_domain_id = fields.Many2one(
@@ -46,7 +46,7 @@ class Alias(models.Model):
     alias_domain = fields.Char('Alias domain name', related='alias_domain_id.name')
     # target: create / update
     alias_model_id = fields.Many2one('ir.model', 'Aliased Model', required=True, ondelete="cascade",
-                                     help="The model (Odoo Document Kind) to which this alias "
+                                     help="The model (HaliBlu Document Kind) to which this alias "
                                           "corresponds. Any incoming email that does not reply to an "
                                           "existing record will cause the creation of a new record "
                                           "of this model (e.g. a Project Task)",

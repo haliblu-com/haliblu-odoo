@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
     <t t-name="web.UpgradeDialog">
-        <Dialog size="'md'" title="'Odoo Enterprise'">
+        <Dialog size="'md'" title="'HaliBlu Enterprise'">
             <div class="row" role="status">
                 <div class="col-6">
                     <!-- Debranding odoo: Replaced 'Odoo' with 'HaliBlu' -->

@@ -32,8 +32,8 @@ msgstr "<span class=\"button\" id=\"button_open_report\">➔ Abrir informe</span
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"odoo_link_text\">Odoo</span>"
-msgstr "<span class=\"odoo_link_text\">Odoo</span>"
+msgid "<span class=\"odoo_link_text\">HaliBlu</span>"
+msgstr "<span class=\"odoo_link_text\">HaliBlu</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
@@ -321,8 +321,8 @@ msgstr "Fecha del próximo envío de correo"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
-msgstr "Odoo Móvil"
+msgid "HaliBlu Mobile"
+msgstr "HaliBlu Móvil"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__periodicity
@@ -365,8 +365,8 @@ msgstr "Destinatarios"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Gestione su negocio desde cualquier parte con <b>Odoo Móvil</b>."
+msgid "Run your business from anywhere with <b>HaliBlu Mobile</b>."
+msgstr "Gestione su negocio desde cualquier parte con <b>HaliBlu Móvil</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -407,8 +407,8 @@ msgstr "Descripción del consejo"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Consejo: una calculadora en Odoo"
+msgid "Tip: A calculator in HaliBlu"
+msgstr "Consejo: una calculadora en HaliBlu"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_1
@@ -432,8 +432,8 @@ msgstr "Consejo: acelere su flujo de trabajo con accesos rápidos"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Consejo: una calculadora en Odoo"
+msgid "Tip: A calculator in HaliBlu"
+msgstr "Consejo: una calculadora en HaliBlu"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_1
@@ -464,11 +464,11 @@ msgstr "Título"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @HaliBluBot to test the feature."
 msgstr ""
 "Escriba \"@\" para enviar una notificación a alguien por medio de un "
 "mensaje, o \"#\" para vincular un canal. Intente enviar una notificación a "
-"@OdooBot para probar esta función."
+"@HaliBluBot para probar esta función."
 
 #. module: digest
 #: model:ir.model.fields,help:digest.field_digest_tip__sequence
@@ -542,8 +542,8 @@ msgstr "Se canceló su suscripción con éxito:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
-msgstr "Su resumen periódico de Odoo"
+msgid "Your HaliBlu Periodic Digest"
+msgstr "Su resumen periódico de HaliBlu"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

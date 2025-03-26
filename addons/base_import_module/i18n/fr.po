@@ -289,7 +289,7 @@ msgstr "Les personnalisations de Studio nécessitent Studio"
 #. odoo-python
 #: code:addons/base_import_module/models/ir_module.py:0
 #, python-format
-msgid "Studio customizations require the Odoo Studio app."
+msgid "Studio customizations require the HaliBlu Studio app."
 msgstr "Les personnalisations Studio nécessitent l'application Studio."
 
 #. module: base_import_module

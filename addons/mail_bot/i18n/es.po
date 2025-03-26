@@ -84,13 +84,13 @@ msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
 "<br/>Congratulations, you finished this tour. You can now <b>close this "
 "conversation</b> or start the tour again with typing <span "
-"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering HaliBlu!"
 msgstr ""
 "Soy un simple bot, pero si eso es un perro, es el más adorable 😊 "
 "<br/>Enhorabuena, esto es el final de de este tour</b>. Ahora puede "
 "<b>cerrar esta conversación</b> o comenzar el recorrido otra vez tecleando "
 "<span class=\"o_odoobot_command\">comenzar el recorrido</span>. ¡Disfrute "
-"descubriendo Odoo!"
+"descubriendo HaliBlu!"
 
 #. module: mail_bot
 #. odoo-python
@@ -155,21 +155,21 @@ msgstr ""
 #: code:addons/mail_bot/models/res_users.py:0
 #, python-format
 msgid ""
-"Odoo's chat helps employees collaborate efficiently. I'm here to help you "
+"HaliBlu's chat helps employees collaborate efficiently. I'm here to help you "
 "discover its features."
 msgstr ""
-"El chat de Odoo ayuda a los empleados a colaborar eficientemente. Estoy aquí"
+"El chat de HaliBlu ayuda a los empleados a colaborar eficientemente. Estoy aquí"
 " para ayudarle a descubrir sus características."
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
-msgstr "Estado de OdooBot"
+msgid "HaliBluBot Status"
+msgstr "Estado de HaliBluBot"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
-msgid "Odoobot Failed"
-msgstr "Odoobot falló"
+msgid "HaliBlubot Failed"
+msgstr "HaliBlubot falló"
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_attachement
@@ -210,11 +210,11 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@HaliBluBot</span> and select me."
 msgstr ""
 "Lo siento, no estaba escuchando. Para llamarle la atención a alguien, "
 "<b>envíele una notificación</b>. Escriba<span "
-"class=\"o_odoobot_command\">@OdooBot</span> y seleccióneme."
+"class=\"o_odoobot_command\">@HaliBluBot</span> y seleccióneme."
 
 #. module: mail_bot
 #. odoo-python
@@ -277,11 +277,11 @@ msgstr "Usuario"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@HaliBluBot</span> in a sentence."
 msgstr ""
 "¡Uy, tiene talento natural!<br/>Envíele una notificación a alguien usando "
 "@nombre-de-usuario para llamar su atención. <b>Intente etiquetarme "
-"utilizando</b> <span class=\"o_odoobot_command\">@OdooBot</span> en una "
+"utilizando</b> <span class=\"o_odoobot_command\">@HaliBluBot</span> en una "
 "oración."
 
 #. module: mail_bot

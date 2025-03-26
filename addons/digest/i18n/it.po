@@ -32,8 +32,8 @@ msgstr "<span class=\"button\" id=\"button_open_report\">➔ Apri resoconto</spa
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"odoo_link_text\">Odoo</span>"
-msgstr "<span class=\"odoo_link_text\">Odoo</span>"
+msgid "<span class=\"odoo_link_text\">HaliBlu</span>"
+msgstr "<span class=\"odoo_link_text\">HaliBlu</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
@@ -321,8 +321,8 @@ msgstr "Data prossima e-mail"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
-msgstr "Odoo per dispositivo mobile"
+msgid "HaliBlu Mobile"
+msgstr "HaliBlu per dispositivo mobile"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__periodicity
@@ -365,8 +365,8 @@ msgstr "Destinatari"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Gestisci il tuo business da qualsiasi luogo con <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>HaliBlu Mobile</b>."
+msgstr "Gestisci il tuo business da qualsiasi luogo con <b>HaliBlu Mobile</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -407,8 +407,8 @@ msgstr "Descrizione suggerimento"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Consiglio: una calcolatrice in Odoo"
+msgid "Tip: A calculator in HaliBlu"
+msgstr "Consiglio: una calcolatrice in HaliBlu"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_1
@@ -432,8 +432,8 @@ msgstr "Consiglio: velocizza il flusso di lavoro con le scorciatoie"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Consiglio: una calcolatrice in Odoo"
+msgid "Tip: A calculator in HaliBlu"
+msgstr "Consiglio: una calcolatrice in HaliBlu"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_1
@@ -464,10 +464,10 @@ msgstr "Titolo"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @HaliBluBot to test the feature."
 msgstr ""
 "Digita \"@\" per notificare qualcuno in un messaggio, o \"#\" per collegare "
-"a un canale. Prova a notificare @OdooBot per testare la funzione."
+"a un canale. Prova a notificare @HaliBluBot per testare la funzione."
 
 #. module: digest
 #: model:ir.model.fields,help:digest.field_digest_tip__sequence
@@ -542,8 +542,8 @@ msgstr "Sei stato rimosso con successo da:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
-msgstr "Riepilogo periodico Odoo personale"
+msgid "Your HaliBlu Periodic Digest"
+msgstr "Riepilogo periodico HaliBlu personale"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

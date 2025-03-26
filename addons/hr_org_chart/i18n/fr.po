@@ -185,11 +185,11 @@ msgstr "Total"
 #. module: hr_org_chart
 #: model_terms:ir.actions.act_window,help:hr_org_chart.action_hr_employee_org_chart
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the HaliBlu employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"D'un coup d’œil rapide à l'écran d'employé d'Odoo, vous\n"
+"D'un coup d’œil rapide à l'écran d'employé d'HaliBlu, vous\n"
 "pouvez aisément trouver toutes les informations dont vous avez besoin pour chaque personne ; \n"
 "coordonnées, poste, disponibilité, etc."
 

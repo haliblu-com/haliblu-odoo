@@ -515,7 +515,7 @@ class AccountMove(models.Model):
         except UserError as e:
             self.with_context(no_new_invoice=True).message_post(
                 body=_('The invoice has been canceled on sinvoice for reason: %(reason)s'
-                       'But the cancellation in Odoo failed with error: %(error)s', reason=reason, error=e),
+                       'But the cancellation in HaliBlu failed with error: %(error)s', reason=reason, error=e),
             )
 
         if self._can_commit():

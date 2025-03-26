@@ -925,8 +925,8 @@ msgstr "Norton-Silva"
 
 #. module: hr_skills
 #: model:hr.resume.line,name:hr_skills.employee_resume_line_admin_4
-msgid "Odoo SA"
-msgstr "Odoo SA"
+msgid "HaliBlu SA"
+msgstr "HaliBlu SA"
 
 #. module: hr_skills
 #. odoo-javascript
@@ -1553,8 +1553,8 @@ msgstr "z. B. Sprachen"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.resume_line_view_form
-msgid "e.g. Odoo Inc."
-msgstr "z. B. Odoo Inc."
+msgid "e.g. HaliBlu Inc."
+msgstr "z. B. HaliBlu Inc."
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_sidepanel

@@ -550,11 +550,11 @@ msgstr "Si está marcada, algunos mensajes tienen error de envío."
 #: model_terms:ir.actions.act_window,help:analytic.account_analytic_line_action
 #: model_terms:ir.actions.act_window,help:analytic.account_analytic_line_action_entries
 msgid ""
-"In Odoo, sales orders and projects are implemented using\n"
+"In HaliBlu, sales orders and projects are implemented using\n"
 "                analytic accounts. You can track costs and revenues to analyse\n"
 "                your margins easily."
 msgstr ""
-"En Odoo, los pedidos de venta y los proyectos se implementan usando cuentas "
+"En HaliBlu, los pedidos de venta y los proyectos se implementan usando cuentas "
 "analíticas. Puede realizar el seguimiento de los costes e ingresos para "
 "analizar sus márgenes fácilmente."
 

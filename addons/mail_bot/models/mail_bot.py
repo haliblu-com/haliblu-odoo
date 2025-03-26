@@ -44,7 +44,7 @@ class MailBot(models.AbstractModel):
             elif odoobot_state == 'onboarding_command' and command == 'help':
                 self.env.user.odoobot_state = "onboarding_ping"
                 self.env.user.odoobot_failed = False
-                return Markup(_("Wow you are a natural!<br/>Ping someone with @username to grab their attention. <b>Try to ping me using</b> <span class=\"o_odoobot_command\">@OdooBot</span> in a sentence."))
+                return Markup(_("Wow you are a natural!<br/>Ping someone with @username to grab their attention. <b>Try to ping me using</b> <span class=\"o_odoobot_command\">@HaliBluBot</span> in a sentence."))
             elif odoobot_state == 'onboarding_ping' and self._is_bot_pinged(values):
                 self.env.user.odoobot_state = "onboarding_attachement"
                 self.env.user.odoobot_failed = False
@@ -52,7 +52,7 @@ class MailBot(models.AbstractModel):
             elif odoobot_state == 'onboarding_attachement' and values.get("attachment_ids"):
                 self.env.user.odoobot_state = "idle"
                 self.env.user.odoobot_failed = False
-                return Markup(_("I am a simple bot, but if that's a dog, he is the cutest 😊 <br/>Congratulations, you finished this tour. You can now <b>close this conversation</b> or start the tour again with typing <span class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"))
+                return Markup(_("I am a simple bot, but if that's a dog, he is the cutest 😊 <br/>Congratulations, you finished this tour. You can now <b>close this conversation</b> or start the tour again with typing <span class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering HaliBlu!"))
             elif odoobot_state in (False, "idle", "not_initialized") and (_('start the tour') in body.lower()):
                 self.env.user.odoobot_state = "onboarding_emoji"
                 return _("To start, try to send me an emoji :)")
