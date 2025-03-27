@@ -700,10 +700,10 @@ msgstr ""
 #, python-format
 msgid ""
 "You don't have an IAP account registered for this service.<br>Please go to "
-"<a href=%s target=\"new\">iap.haliblu.com</a> to claim your free credits."
+"<a href=%s target=\"new\">iap.HaliBlu.com</a> to claim your free credits."
 msgstr ""
 "Nessun account acquisti integrati (IAP) registrato per il "
-"servizio.<br>Andare su <a href=%s target=\"new\">iap.haliblu.com</a> per "
+"servizio.<br>Andare su <a href=%s target=\"new\">iap.HaliBlu.com</a> per "
 "richiedere crediti gratuiti."
 
 #. module: snailmail

@@ -37,7 +37,7 @@ class Alias(models.Model):
     # email definition
     alias_name = fields.Char(
         'Alias Name', copy=False,
-        help="The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.haliblu.com>")
+        help="The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.HaliBlu.com>")
     alias_full_name = fields.Char('Alias Email', compute='_compute_alias_full_name', store=True, index='btree_not_null')
     display_name = fields.Char(string='Display Name', compute='_compute_display_name')
     alias_domain_id = fields.Many2one(

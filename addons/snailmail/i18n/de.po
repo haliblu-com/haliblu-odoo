@@ -703,11 +703,11 @@ msgstr ""
 #, python-format
 msgid ""
 "You don't have an IAP account registered for this service.<br>Please go to "
-"<a href=%s target=\"new\">iap.haliblu.com</a> to claim your free credits."
+"<a href=%s target=\"new\">iap.HaliBlu.com</a> to claim your free credits."
 msgstr ""
 "Sie haben noch kein IAP-Konto für diesen Dienst registriert. <br> Bitte "
 "beantragen Sie Ihr kostenloses Guthaben auf <a href=%s "
-"target=\"new\">iap.haliblu.com</a>. "
+"target=\"new\">iap.HaliBlu.com</a>. "
 
 #. module: snailmail
 #. odoo-python

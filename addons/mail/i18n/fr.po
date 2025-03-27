@@ -3497,8 +3497,8 @@ msgstr "Assistant de composition d'e-mails"
 #: model:ir.model.fields,help:mail.field_mail_alias_mixin__alias_domain
 #: model:ir.model.fields,help:mail.field_mail_alias_mixin_optional__alias_domain
 #: model:ir.model.fields,help:mail.field_res_company__alias_domain_name
-msgid "Email domain e.g. 'example.com' in 'haliblu@example.com'"
-msgstr "Domaine de messagerie par ex. 'example.com' dans 'haliblu@example.com'"
+msgid "Email domain e.g. 'example.com' in 'HaliBlu@example.com'"
+msgstr "Domaine de messagerie par ex. 'example.com' dans 'HaliBlu@example.com'"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_form
@@ -9486,10 +9486,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias_mixin_optional__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.haliblu.com>"
+"<jobs@example.HaliBlu.com>"
 msgstr ""
 "Le nom de l'alias, par exemple 'carrières' pour récupérer les e-mails de "
-"<carrières@example.haliblu.com>"
+"<carrières@example.HaliBlu.com>"
 
 #. module: mail
 #. odoo-python
@@ -10476,12 +10476,12 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.haliblu.com)."
+"email server (@mycompany.HaliBlu.com)."
 msgstr ""
 "Vous devez utiliser votre propre serveur de messagerie pour envoyer ou "
 "recevoir des e-mails dans les versions Community et Enterprise. Les "
 "utilisateurs en ligne bénéficient déjà d'un serveur de messagerie "
-"préalablement compatible (@mycompany.haliblu.com)."
+"préalablement compatible (@mycompany.HaliBlu.com)."
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_alias__alias_status__valid
@@ -11363,8 +11363,8 @@ msgstr "par ex. user_id"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.haliblu.com\""
-msgstr "par ex. \"info@mycompany.haliblu.com\""
+msgid "e.g: \"info@mycompany.HaliBlu.com\""
+msgstr "par ex. \"info@mycompany.HaliBlu.com\""
 
 #. module: mail
 #. odoo-javascript

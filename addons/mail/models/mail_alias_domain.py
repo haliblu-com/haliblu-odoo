@@ -18,7 +18,7 @@ class AliasDomain(models.Model):
 
     name = fields.Char(
         'Name', required=True,
-        help="Email domain e.g. 'example.com' in 'haliblu@example.com'")
+        help="Email domain e.g. 'example.com' in 'HaliBlu@example.com'")
     company_ids = fields.One2many(
         'res.company', 'alias_domain_id', string='Companies',
         help="Companies using this domain as default for sending mails")
