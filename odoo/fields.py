@@ -2002,8 +2002,9 @@ class Html(_String):
         # called by _setup_attrs(), working together with _String._setup_attrs()
         attrs = super()._get_attrs(model_class, name)
         # Translated sanitized html fields must use html_translate or a callable.
-        if attrs.get('translate') is True and attrs.get('sanitize', True):
-            attrs['translate'] = html_translate
+        # if attrs.get('translate') is True and attrs.get('sanitize', True):
+        #     attrs['translate'] = html_translate
+        # Commented above code to ignore sanitize attr, we will consider it as False always.
         return attrs
 
     @property
