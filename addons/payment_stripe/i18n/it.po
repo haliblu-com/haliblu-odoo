@@ -77,10 +77,10 @@ msgstr "Ottieni il tuo Secret e Publishable keys"
 #: model:ir.model.fields,help:payment_stripe.field_payment_provider__stripe_webhook_secret
 msgid ""
 "If a webhook is enabled on your Stripe account, this signing secret must be "
-"set to authenticate the messages sent from Stripe to Odoo."
+"set to authenticate the messages sent from Stripe to HaliBlu."
 msgstr ""
 "Se sul tuo account Stripe è abilitato un webhook, questo segreto di firma "
-"deve essere impostato per autenticare i messaggi inviati da Stripe a Odoo."
+"deve essere impostato per autenticare i messaggi inviati da Stripe a HaliBlu."
 
 #. module: payment_stripe
 #. odoo-javascript

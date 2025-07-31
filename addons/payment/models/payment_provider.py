@@ -58,7 +58,7 @@ class PaymentProvider(models.Model):
              "provider's database, allowing the customer to reuse it for a next purchase.")
     capture_manually = fields.Boolean(
         string="Capture Amount Manually",
-        help="Capture the amount from Odoo, when the delivery is completed.\n"
+        help="Capture the amount from HaliBlu, when the delivery is completed.\n"
              "Use this if you want to charge your customers cards only when\n"
              "you are sure you can ship the goods to them.")
     allow_express_checkout = fields.Boolean(
